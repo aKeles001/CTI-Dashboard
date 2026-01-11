@@ -1,0 +1,68 @@
+time=2026-01-11T15:44:27.850Z level=INFO msg="Successfully added forum: %s" !BADKEY=DarkNet
+time=2026-01-11T15:44:36.881Z level=ERROR msg="Failed to check Tor status: %v" !BADKEY="Tor check failed: Get \"https://check.torproject.org/api/ip\": socks connect tcp 127.0.0.1:9050->check.torproject.org:443: dial tcp 127.0.0.1:9050: connect: connection refused"
+time=2026-01-11T15:44:36.882Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/\": socks connect tcp 127.0.0.1:9050->darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion:80: dial tcp 127.0.0.1:9050: connect: connection refused" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/ attempt=1
+time=2026-01-11T15:44:38.883Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/\": socks connect tcp 127.0.0.1:9050->darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion:80: dial tcp 127.0.0.1:9050: connect: connection refused" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/ attempt=2
+time=2026-01-11T15:44:42.885Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/\": socks connect tcp 127.0.0.1:9050->darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion:80: dial tcp 127.0.0.1:9050: connect: connection refused" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/ attempt=3
+time=2026-01-11T15:44:48.889Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=DarkNet
+time=2026-01-11T15:48:12.368Z level=ERROR msg="Failed to check Tor status: %v" !BADKEY="Tor check failed: Get \"https://check.torproject.org/api/ip\": socks connect tcp 127.0.0.1:9050->check.torproject.org:443: dial tcp 127.0.0.1:9050: connect: connection refused"
+time=2026-01-11T15:48:12.370Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/\": socks connect tcp 127.0.0.1:9050->darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion:80: dial tcp 127.0.0.1:9050: connect: connection refused" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/ attempt=1
+time=2026-01-11T15:48:14.372Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/\": socks connect tcp 127.0.0.1:9050->darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion:80: dial tcp 127.0.0.1:9050: connect: connection refused" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/ attempt=2
+time=2026-01-11T15:48:18.373Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/\": socks connect tcp 127.0.0.1:9050->darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion:80: dial tcp 127.0.0.1:9050: connect: connection refused" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/ attempt=3
+time=2026-01-11T15:48:24.378Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=DarkNet
+time=2026-01-11T15:51:09.557Z level=INFO msg="Connected to Tor network" IP=185.181.61.201
+time=2026-01-11T15:51:13.698Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:51:15.711Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:51:17.634Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:51:17.635Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=DarkNet
+time=2026-01-11T15:53:13.246Z level=INFO msg="Connected to Tor network" IP=185.181.61.201
+time=2026-01-11T15:53:15.470Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:53:17.528Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:53:19.393Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:53:19.393Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=DarkNet
+time=2026-01-11T15:56:01.616Z level=INFO msg="Connected to Tor network" IP=185.181.61.201
+time=2026-01-11T15:56:03.751Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:56:05.557Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:56:07.494Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:56:07.494Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=DarkNet
+time=2026-01-11T15:59:24.775Z level=INFO msg="Connected to Tor network" IP=185.220.101.4
+time=2026-01-11T15:59:26.986Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:59:28.781Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:59:30.554Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T15:59:30.554Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=DarkNet
+time=2026-01-11T16:06:30.707Z level=INFO msg="Connected to Tor network" IP=185.220.101.4
+time=2026-01-11T16:06:34.723Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T16:06:36.844Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: exec: \"google-chrome\": executable file not found in $PATH" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T16:14:36.325Z level=INFO msg="Connected to Tor network" IP=45.84.107.198
+time=2026-01-11T16:15:08.913Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: context deadline exceeded" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T16:15:41.413Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: context deadline exceeded" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T16:16:13.550Z level=ERROR msg="Screenshot capture failed" error="screenshot failed: context deadline exceeded" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/
+time=2026-01-11T16:16:13.550Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=DarkNet
+time=2026-01-11T16:17:52.961Z level=INFO msg="Successfully added forum: %s" !BADKEY=Ahmiya
+time=2026-01-11T16:17:59.102Z level=INFO msg="Connected to Tor network" IP=45.84.107.198
+time=2026-01-11T16:18:30.057Z level=ERROR msg="Failed to write result" error="open output/html/juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion.html: no such file or directory" target=http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/
+time=2026-01-11T16:18:59.161Z level=ERROR msg="Failed to write result" error="open output/html/juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion.html: no such file or directory" target=http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/
+time=2026-01-11T16:19:26.578Z level=ERROR msg="Failed to write result" error="open output/html/juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion.html: no such file or directory" target=http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/
+time=2026-01-11T16:19:26.578Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=Ahmiya
+time=2026-01-11T16:20:19.929Z level=INFO msg="Connected to Tor network" IP=45.84.107.198
+time=2026-01-11T16:20:47.878Z level=INFO msg="Successfully scraped target" target=http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/
+time=2026-01-11T16:20:47.898Z level=INFO msg="Succesfuly updated the last sacan of %v" !BADKEY=Ahmiya
+time=2026-01-11T16:20:47.898Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=Ahmiya
+time=2026-01-11T16:23:15.256Z level=INFO msg="Successfully added forum: %s" !BADKEY=Ahmiya
+time=2026-01-11T16:35:49.547Z level=INFO msg="Connected to Tor network" IP=45.80.158.143
+time=2026-01-11T16:36:19.510Z level=INFO msg="Successfully scraped target" target=http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/
+time=2026-01-11T16:36:19.510Z level=ERROR msg="Could not prepare the database statement %v" !BADKEY="no such column: html_path"
+time=2026-01-11T16:37:01.602Z level=INFO msg="Connected to Tor network" IP=45.80.158.143
+time=2026-01-11T16:37:30.103Z level=INFO msg="Successfully scraped target" target=http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/
+time=2026-01-11T16:37:30.104Z level=ERROR msg="Could not prepare the database statement %v" !BADKEY="no such column: html_path"
+time=2026-01-11T16:43:29.010Z level=INFO msg="Connected to Tor network" IP=45.80.158.143
+time=2026-01-11T16:43:58.631Z level=INFO msg="Successfully scraped target" target=http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/
+time=2026-01-11T16:43:58.631Z level=ERROR msg="Could not prepare the database statement %v" !BADKEY="no such column: last_scanned"
+time=2026-01-11T16:43:58.631Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=Ahmiya
+time=2026-01-11T16:45:05.043Z level=INFO msg="Connected to Tor network" IP=45.80.158.143
+time=2026-01-11T16:45:34.287Z level=INFO msg="Successfully scraped target" target=http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/
+time=2026-01-11T16:45:34.288Z level=ERROR msg="Could not prepare the database statement %v" !BADKEY="no such column: html_path"
+time=2026-01-11T16:45:34.288Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=Ahmiya
+time=2026-01-11T16:46:36.444Z level=INFO msg="Connected to Tor network" IP=192.42.116.181
+time=2026-01-11T16:47:05.075Z level=INFO msg="Successfully scraped target" target=http://juhanurmihxlp77nkq76byazcldy2hlmovfu2epvl5ankdibsot4csyd.onion/
+time=2026-01-11T16:47:05.096Z level=INFO msg="Successfully updated the last scan of %v" !BADKEY=Ahmiya
+time=2026-01-11T16:47:05.096Z level=INFO msg="Successfully scraped forum: %s" !BADKEY=Ahmiya

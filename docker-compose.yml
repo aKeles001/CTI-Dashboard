@@ -1,0 +1,43 @@
+services:
+  wails-dev:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: wails-dev:latest
+    container_name: wails-development
+    volumes:
+      - .:/app
+      - go-cache:/home/wailsdev/go
+      - /tmp/.X11-unix:/tmp/.X11-unix:rw
+      - ${XAUTHORITY:-$HOME/.Xauthority}:/home/wailsdev/.Xauthority:ro
+    environment:
+      - DISPLAY=${DISPLAY}
+      - XAUTHORITY=/home/wailsdev/.Xauthority
+      - WEBKIT_TAGS=-tags webkit2_41
+      - GOPATH=/home/wailsdev/go
+      - CGO_ENABLED=1
+      - NO_AT_BRIDGE=1
+    # Add this to fix the Mesa/EGL errors (GPU access)
+    devices:
+      - /dev/dri:/dev/dri
+    working_dir: /app
+    stdin_open: true
+    tty: true
+    network_mode: host
+    security_opt:
+      - seccomp:unconfined
+    privileged: true
+    depends_on:
+      - tor
+
+  tor:
+    image: alpine:latest
+    container_name: tor-proxy
+    command: sh -c "apk add --no-cache tor && echo 'SocksPort 0.0.0.0:9050' > /etc/tor/torrc && exec tor -f /etc/tor/torrc"
+    ports:
+      - "9050:9050"
+    restart: unless-stopped
+
+volumes:
+  go-cache:
+    driver: local
