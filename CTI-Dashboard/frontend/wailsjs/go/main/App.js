@@ -6,8 +6,28 @@ export function CreateForum(arg1) {
   return window['go']['main']['App']['CreateForum'](arg1);
 }
 
+export function DeleteForum(arg1) {
+  return window['go']['main']['App']['DeleteForum'](arg1);
+}
+
+export function Extract_posts(arg1) {
+  return window['go']['main']['App']['Extract_posts'](arg1);
+}
+
 export function GetForums() {
   return window['go']['main']['App']['GetForums']();
+}
+
+export function GetPosts(arg1) {
+  return window['go']['main']['App']['GetPosts'](arg1);
+}
+
+export function MultipleScrape(arg1) {
+  return window['go']['main']['App']['MultipleScrape'](arg1);
+}
+
+export function ScanPosts(arg1) {
+  return window['go']['main']['App']['ScanPosts'](arg1);
 }
 
 export function SingularScrape(arg1) {

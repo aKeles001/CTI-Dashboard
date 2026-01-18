@@ -17,10 +17,8 @@ func ReadTargets(filePath string) ([]string, error) {
 	for scanner.Scan() {
 		targets = append(targets, scanner.Text())
 	}
-
 	if err := scanner.Err(); err != nil {
 		return nil, err
 	}
-
 	return targets, nil
 }

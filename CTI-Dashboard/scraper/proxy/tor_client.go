@@ -1,9 +1,8 @@
 package proxy
 
 import (
-	"net/http"
-
 	"CTI-Dashboard/scraper/config"
+	"net/http"
 
 	"golang.org/x/net/proxy"
 )

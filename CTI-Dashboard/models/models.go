@@ -8,4 +8,17 @@ type Forum struct {
 	LastScaned       string `json:"last_scaned"`
 	ForumHTML        string `json:"forum_html"`
 	ForumScreenshot  string `json:"forum_screenshot"`
+	ForumEngine      string `json:"forum_engine"`
+}
+
+type Post struct {
+	PostID      string `json:"post_id"`
+	ForumID     string `json:"forum_id"`
+	ThreadURL   string `json:"thread_url"`
+	Status      string `json:"status"`
+	Severity    string `json:"severity_level"`
+	Title       string `json:"title"`
+	PostContent string `json:"content"`
+	PostAuthor  string `json:"author"`
+	PostDate    string `json:"date"`
 }

@@ -53,8 +53,8 @@ export -f xgo_build
 echo "=========================================="
 echo "Wails Development Environment"
 echo "=========================================="
-echo "Go version: $(go version)"
-echo "Wails version: $(wails version)"
+echo "Go version: $(go version)"version: $(wa
+echo "Wails ils version)"
 echo "Node.js version: $(node --version)"
 echo "npm version: $(npm --version)"
 echo "WebKit tags: $WEBKIT_TAGS"

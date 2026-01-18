@@ -3,12 +3,13 @@ package main
 import (
 	"context"
 	"database/sql"
+	"errors"
 	"fmt"
 	"net/http"
-	"os"
 
 	"CTI-Dashboard/models"
 	"CTI-Dashboard/scraper/config"
+	"CTI-Dashboard/scraper/extractor"
 	"CTI-Dashboard/scraper/logger"
 	"CTI-Dashboard/scraper/output"
 	"CTI-Dashboard/scraper/scanner"
@@ -23,13 +24,15 @@ type App struct {
 	cfg    config.Config
 	client *http.Client
 	writer *output.Writer
+	db     *sql.DB
 }
 
-func NewApp(cfg config.Config, client *http.Client, writer *output.Writer) *App {
+func NewApp(cfg config.Config, client *http.Client, writer *output.Writer, db *sql.DB) *App {
 	return &App{
 		cfg:    cfg,
 		client: client,
 		writer: writer,
+		db:     db,
 	}
 }
 func (a *App) startup(ctx context.Context) {
@@ -37,42 +40,34 @@ func (a *App) startup(ctx context.Context) {
 }
 
 // Add forum
-func (a *App) CreateForum(forumData models.Forum) string {
-	db, err := sql.Open("sqlite3", "./db/database.db")
-	if err != nil {
-		logger.Error("Could not connect to the database %v", err)
+func (a *App) CreateForum(forumData models.Forum) (string, error) {
+	if forumData.ForumName == "" || forumData.ForumURL == "" {
+		return "Error: Forum name and URL cannot be empty.", errors.New("forum name and URL cannot be empty")
 	}
-	defer db.Close()
+
 	forum_id := uuid.New().String()
-	statement, err := db.Prepare(`INSERT INTO forums (forum_id, forum_name, forum_url, forum_description, last_scaned) VALUES (?, ?, ?, ?, ?)`)
+	statement, err := a.db.Prepare(`INSERT INTO forums (forum_id, forum_name, forum_url, forum_description, last_scaned) VALUES (?, ?, ?, ?, ?)`)
 	if err != nil {
-		logger.Error("Could not prepare the database statement %v", err)
-		os.Exit(1)
+		logger.Error("Could not prepare the database statement", "error", err)
+		return "Error: Could not prepare the database statement", err
 	}
 	defer statement.Close()
 
 	_, err = statement.Exec(forum_id, forumData.ForumName, forumData.ForumURL, forumData.ForumDescription, "NULL")
 	if err != nil {
-		logger.Error("Could not insert forum into the database %v", err)
-		return "Error: Could not insert forum into the database"
+		logger.Error("Could not insert forum into the database", "error", err)
+		return "Error: Could not insert forum into the database", err
 	}
-	logger.Info("Successfully added forum: %s", forumData.ForumName)
-	return fmt.Sprintf("Successfully added forum: %s", forumData.ForumName)
+	logger.Info("Successfully added forum", "name", forumData.ForumName)
+	return fmt.Sprintf("Successfully added forum: %s", forumData.ForumName), nil
 }
 
-// Get Foru
+// Get Forum
 func (a *App) GetForums() []models.Forum {
-	db, err := sql.Open("sqlite3", "./db/database.db")
+	rows, err := a.db.Query("SELECT forum_id, forum_url, forum_description, forum_name, last_scaned FROM forums")
 	if err != nil {
-		logger.Error("Could not connect to the database %v", err)
-		os.Exit(1)
-	}
-	defer db.Close()
-
-	rows, err := db.Query("SELECT forum_id, forum_url, forum_description, forum_name, last_scaned FROM forums")
-	if err != nil {
-		logger.Error("Could not prepare the database statement %v", err)
-		os.Exit(1)
+		logger.Error("Could not prepare the database statement", "error", err)
+		return nil
 	}
 	defer rows.Close()
 
@@ -81,17 +76,18 @@ func (a *App) GetForums() []models.Forum {
 		var f models.Forum
 		err := rows.Scan(&f.ForumID, &f.ForumURL, &f.ForumDescription, &f.ForumName, &f.LastScaned)
 		if err != nil {
-			logger.Error("Could not scan the database rows %v", err)
+			logger.Error("Could not scan the database rows", "error", err)
 			continue
 		}
 		forums = append(forums, f)
 	}
-
 	return forums
+
 }
 
-func (a *App) SingularScrape(forum models.Forum) string {
-	scanner.Run(scanner.Options{
+// Singular Forum Scrape
+func (a *App) SingularScrape(forum models.Forum) error {
+	err := scanner.Run(scanner.Options{
 		Targets:    []string{forum.ForumURL},
 		Client:     a.client,
 		Writer:     a.writer,
@@ -99,8 +95,111 @@ func (a *App) SingularScrape(forum models.Forum) string {
 		Retries:    a.cfg.MaxRetries,
 		TargetName: forum.ForumName,
 		Proxy:      a.cfg.TorProxy,
+		DB:         a.db,
 	})
-	logger.Info("Successfully scraped forum: %s", forum.ForumName)
+	if err != nil {
+		logger.Error("Could not scrape forum", "error", err)
+		return err
+	}
+	logger.Info("Successfully scraped forum", "name", forum.ForumName)
+	return nil
+}
 
-	return "Successfully scraped forum:"
+// Multiple Forum Scrape
+func (a *App) MultipleScrape(forums []models.Forum) []models.Forum {
+	var errforums []models.Forum
+	for _, forum := range forums {
+		err := scanner.Run(scanner.Options{
+			Targets:    []string{forum.ForumURL},
+			Client:     a.client,
+			Writer:     a.writer,
+			Timeout:    a.cfg.Timeout,
+			Retries:    a.cfg.MaxRetries,
+			TargetName: forum.ForumName,
+			Proxy:      a.cfg.TorProxy,
+			DB:         a.db,
+		})
+		if err != nil {
+			logger.Error("Could not scrape forum", "error", err)
+			errforums = append(errforums, forum)
+			continue
+		}
+	}
+	if errforums != nil {
+		logger.Error("Could not scrape all forums", "error", errforums)
+		return errforums
+	}
+	logger.Info("All forums scraped")
+	return nil
+}
+
+// Delete Forum
+func (a *App) DeleteForum(forumID string) error {
+	statement, err := a.db.Prepare(`DELETE FROM forums WHERE forum_id = ?`)
+	if err != nil {
+		logger.Error("Could not prepare the database statement", "error", err)
+		return err
+	}
+	defer statement.Close()
+	_, err = statement.Exec(forumID)
+	if err != nil {
+		logger.Error("Could not delete forum from the database", err)
+		return err
+	}
+	logger.Info("Successfully deleted forum", "id", forumID)
+	return err
+}
+
+func (a *App) Extract_posts(forum_id string) (int, error) {
+	result, err := extractor.PostExtract(forum_id, a.db)
+	return result, err
+}
+
+func (a *App) GetPosts(forumID string) ([]models.Post, error) {
+	statement, err := a.db.Prepare(`SELECT post_id, forum_id, thread_url, author, content, date FROM posts WHERE forum_id = ?`)
+	if err != nil {
+		logger.Error("Could not prepare statement", "error", err)
+		return nil, err
+	}
+	defer statement.Close()
+
+	rows, err := statement.Query(forumID)
+	if err != nil {
+		logger.Error("Could not query posts from the database", "error", err)
+		return nil, err
+	}
+	defer rows.Close()
+
+	var posts []models.Post
+	for rows.Next() {
+		var post models.Post
+		var threadUrl sql.NullString
+		err := rows.Scan(&post.PostID, &post.ForumID, &threadUrl, &post.PostAuthor, &post.PostContent, &post.PostDate)
+		if err != nil {
+			logger.Error("Could not scan post row", "error", err)
+			continue
+		}
+		if threadUrl.Valid {
+			post.ThreadURL = threadUrl.String
+		}
+		posts = append(posts, post)
+	}
+
+	if err = rows.Err(); err != nil {
+		logger.Error("Error during rows iteration", "error", err)
+		return nil, err
+	}
+
+	return posts, nil
+}
+
+func (a *App) ScanPosts(forumID string) error {
+	statement, err := a.db.Prepare(`SELECT post_id, thread_url FROM posts WHERE forum_id = ? and status = 'pending'`)
+	if err != nil {
+		logger.Error("Could not prepare statement", "error", err)
+		return err
+	}
+	fmt.Print(statement)
+
+	return nil
 }

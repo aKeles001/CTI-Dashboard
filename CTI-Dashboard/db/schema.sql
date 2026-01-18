@@ -10,17 +10,21 @@ CREATE TABLE IF NOT EXISTS forums (
     forum_description TEXT,
     forum_screenshot TEXT,
     last_scaned DATETIME,
+    forum_engine TEXT,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP
 );
 
 
---Posts Table
 CREATE TABLE IF NOT EXISTS posts (
     post_id TEXT PRIMARY KEY,
     forum_id TEXT,
-    author TEXT,
+    thread_url TEXT UNIQUE,
+    status TEXT DEFAULT 'pending', -- pending, scraped, analyzed, failed
+    severity_level NUMERIC DEFAULT 0,
+    title TEXT,
     content TEXT,
-    severity REAL DEFAULT 0.0,
-    created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (forum_id) REFERENCES forums(forum_id) ON DELETE CASCADE
+    author TEXT,
+    date TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    FOREIGN KEY(forum_id) REFERENCES forums(forum_id)
 );

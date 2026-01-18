@@ -4,6 +4,7 @@ import { Input } from '../components/ui/input';
 import { Textarea } from '../components/ui/textarea';
 import { Button } from '../components/ui/button';
 import { Field, FieldContent, FieldDescription, FieldLabel, FieldSeparator, FieldSet } from '@/components/ui/field';
+import { toast } from 'sonner';
 
 const HomePage: React.FC = () => {
   const [url, setUrl] = useState('');
@@ -16,13 +17,18 @@ const HomePage: React.FC = () => {
 const handleSubmit = (e: React.FormEvent) => {
   e.preventDefault();
   const forumData = { forum_id: '', forum_url: url, forum_name: name, forum_description: description, last_scaned: last_scaned, forum_html: '', forum_screenshot: '' };
-  CreateForum(forumData).then((result: string) => {
-    setResult(result);
-    setName('');
-    setUrl('');
-    setDescription('');
-    setLastScaned('');
-  });
+  CreateForum(forumData)
+    .then((resultMessage: string) => {
+      setResult(resultMessage);
+      setName('');
+      setUrl('');
+      setDescription('');
+      setLastScaned('');
+      toast.success("Forum Created");
+    }).catch((errorMessage: string) => {
+      setResult(errorMessage);
+      toast.error("Failed to create forum");
+    });
 };
 
   return (
@@ -90,4 +96,3 @@ const handleSubmit = (e: React.FormEvent) => {
 };
 
 export default HomePage;
-

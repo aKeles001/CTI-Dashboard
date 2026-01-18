@@ -1,8 +1,11 @@
 package main
 
 import (
+	"database/sql"
 	"embed"
 	"time"
+
+	_ "github.com/mattn/go-sqlite3"
 
 	"CTI-Dashboard/scraper/config"
 	"CTI-Dashboard/scraper/logger"
@@ -25,6 +28,10 @@ func main() {
 		TorProxy:   "127.0.0.1:9050",
 		TargetFile: "targets.yaml",
 	}
+	db, err := sql.Open("sqlite3", "./db/database.db")
+	if err != nil {
+		logger.Error("Could not connect to the database", "error", err)
+	}
 
 	if err := logger.Init(cfg.OutputDir); err != nil {
 		println("Error initializing logger:", err.Error())
@@ -34,17 +41,17 @@ func main() {
 
 	client, err := proxy.TorClient(cfg)
 	if err != nil {
-		logger.Error("Error initializing Tor client: %v", err)
+		logger.Error("Error initializing Tor client:", "error", err)
 		return
 	}
 
 	writer, err := output.NewWriter(cfg.OutputDir)
 	if err != nil {
-		logger.Error("Error initializing writer: %v", err)
+		logger.Error("Error initializing writer:", "error", err)
 		return
 	}
 
-	app := NewApp(cfg, client, writer)
+	app := NewApp(cfg, client, writer, db)
 
 	err = wails.Run(&options.App{
 		Title:  "CTI-Dashboard",
@@ -61,6 +68,6 @@ func main() {
 	})
 
 	if err != nil {
-		logger.Error("Error starting application: %v", err)
+		logger.Error("Error starting application", "error", err)
 	}
 }

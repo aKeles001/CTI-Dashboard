@@ -7,13 +7,14 @@ import Threats from "./pages/Threats";
 import Scrap from "./pages/Scrap";
 import Forums from "./pages/Forums";
 import { ModeToggle } from "./components/mode-toggle";
+import { Toaster } from "./components/ui/sonner";
 
 
 function App() {
 
   return (
+    <ThemeProvider>
       <div className="p-6 flex h-screen w-screen">
-        <ThemeProvider>
           <ModeToggle />
           <SidebarProvider>
             <AppSidebar />
@@ -27,8 +28,9 @@ function App() {
               </Routes>
             </SidebarInset>
           </SidebarProvider>
-        </ThemeProvider>
+          <Toaster />
       </div>
+    </ThemeProvider>
   );
 }
 

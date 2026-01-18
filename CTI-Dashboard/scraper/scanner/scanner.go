@@ -9,6 +9,7 @@ import (
 	"fmt"
 	"io"
 	"net/http"
+	"strings"
 	"time"
 
 	"github.com/chromedp/chromedp"
@@ -29,6 +30,7 @@ type Options struct {
 	Retries    int
 	TargetName string
 	Proxy      string
+	DB         *sql.DB
 }
 type TorStatus struct {
 	IP       string
@@ -45,26 +47,31 @@ func NewScanner(client *http.Client, writer *output.Writer, timeout time.Duratio
 	}
 }
 
-func Run(opts Options) {
+func Run(opts Options) error {
 	scanner := NewScanner(opts.Client, opts.Writer, opts.Timeout, opts.Proxy)
 	response, err := scanner.checkTorStatus()
 	if err != nil {
-		logger.Error("Failed to check Tor status: %v", err)
+		logger.Error("Failed to check Tor status: ", "error", err)
+		return err
 	} else {
 		if response.IsTor {
 			logger.Info("Connected to Tor network", "IP", response.IP)
 		} else {
 			logger.Error("Not connected to Tor network")
+			return err
 		}
 	}
 	for _, target := range opts.Targets {
-		fmt.Printf("Scanning target: %s (Name: %s)\n", target, opts.TargetName)
+		fmt.Printf("Scanning target: %s  (Name: %s)\n", target, opts.TargetName)
 		for i := 0; i < opts.Retries; i++ {
 			fmt.Printf("Scraping - Attempt %d/3\n", i+1)
 			response, err := opts.Client.Get(target)
 			if err != nil {
 				logger.Error("Request failed", "error", err, "target", target, "attempt", i+1)
 				time.Sleep(time.Duration(i+1) * 2 * time.Second)
+				if i == opts.Retries-1 {
+					return err
+				}
 				continue
 			}
 			if response.StatusCode == http.StatusOK {
@@ -73,40 +80,44 @@ func Run(opts Options) {
 					logger.Error("Failed to read response body", "error", err, "target", target)
 					fmt.Println(body)
 					response.Body.Close()
+					if i == opts.Retries-1 {
+						return err
+					}
 					continue
 				}
 
-				screenShot, err := scanner.CaptureScreenshot(target)
+				screenShot, err := scanner.CaptureScreenshot(target, opts)
 				if err != nil {
 					logger.Error("Screenshot capture failed", "error", err, "target", target)
 					response.Body.Close()
+					if i == opts.Retries-1 {
+						return err
+					}
 					continue
 				}
 				response.Body.Close()
 				paths, err := opts.Writer.WriteResult(target, body, screenShot)
 				if err != nil {
 					logger.Error("Failed to write result", "error", err, "target", target)
+					if i == opts.Retries-1 {
+						return err
+					}
 					continue
 				}
 				logger.Info("Successfully scraped target", "target", target)
-				UpdateLastScan(target, opts.TargetName, paths)
+				UpdateLastScan(target, opts.TargetName, paths, opts.DB, body)
 				break
 			}
+			return err
 		}
 	}
+	return err
 }
 
-func (s *Scanner) CaptureScreenshot(targetURL string) ([]byte, error) {
-	if s.Timeout == 0 {
-		s.Timeout = 90 * time.Second
-	}
-	proxyURL := s.Proxy
-	if proxyURL == "" {
-		proxyURL = "127.0.0.1:9050"
-	}
+func (s *Scanner) CaptureScreenshot(targetURL string, opts Options) ([]byte, error) {
 
-	opts := append(chromedp.DefaultExecAllocatorOptions[:],
-		chromedp.ProxyServer("socks5://"+proxyURL),
+	optsScr := append(chromedp.DefaultExecAllocatorOptions[:],
+		chromedp.ProxyServer(opts.Proxy),
 		chromedp.Flag("headless", true),
 		chromedp.Flag("disable-gpu", true),
 		chromedp.Flag("disable-extensions", true),
@@ -118,28 +129,25 @@ func (s *Scanner) CaptureScreenshot(targetURL string) ([]byte, error) {
 		chromedp.WindowSize(1920, 1080),
 	)
 
-	allocCtx, cancel := chromedp.NewExecAllocator(context.Background(), opts...)
+	allocCtx, cancel := chromedp.NewExecAllocator(context.Background(), optsScr...)
 	defer cancel()
 
 	ctx, cancel := chromedp.NewContext(allocCtx)
 	defer cancel()
 
-	ctx, cancel = context.WithTimeout(ctx, s.Timeout)
+	ctx, cancel = context.WithTimeout(ctx, opts.Timeout)
 	defer cancel()
 
 	var buf []byte
 	err := chromedp.Run(ctx,
 		chromedp.Navigate(targetURL),
-
 		chromedp.WaitVisible(`body`, chromedp.ByQuery),
-
 		chromedp.Sleep(25*time.Second),
-
 		chromedp.FullScreenshot(&buf, 90),
 	)
 
 	if err != nil {
-		return nil, fmt.Errorf("screenshot failed: %w", err)
+		return nil, err
 	}
 	return buf, nil
 }
@@ -147,7 +155,7 @@ func (s *Scanner) CaptureScreenshot(targetURL string) ([]byte, error) {
 func (s *Scanner) checkTorStatus() (*TorStatus, error) {
 	resp, err := s.Client.Get("https://check.torproject.org/api/ip")
 	if err != nil {
-		return nil, fmt.Errorf("Tor check failed: %w", err)
+		return nil, err
 	}
 	defer resp.Body.Close()
 	var status TorStatus
@@ -157,55 +165,44 @@ func (s *Scanner) checkTorStatus() (*TorStatus, error) {
 	return &status, nil
 }
 
-func updateLatsScan123(target string, name string, paths []string) {
-	db, err := sql.Open("sqlite3", "./db/database.db")
-	if err != nil {
-		logger.Error("Could not connect to the database %v", err)
-	}
-	defer db.Close()
-	statement, err := db.Prepare(`UPDATE forums SET last_scaned = ?, html_path = ?, screenshot_path = ? WHERE forum_url = ?`)
-	if err != nil {
-		logger.Error("Could not prepare the database statement %v", err)
-	}
-	defer statement.Close()
-	_, err = statement.Exec(time.Now(), paths[0], paths[1], target)
-	if err != nil {
-		logger.Error("Could not update forum in the database %v", err)
-	}
-	logger.Info("Succesfuly updated the last sacan of %v", name)
-}
-
-func UpdateLastScan(target string, name string, paths []string) {
-	// 1. Check slice length before accessing indices to prevent panic
+func UpdateLastScan(target string, name string, paths []string, db *sql.DB, body []byte) {
 	if len(paths) < 2 {
-		logger.Error("Could not update: paths slice must contain at least 2 elements")
+		logger.Error("Could not update: paths slice must contain at least 2 elements (HTML and Screenshot)")
 		return
 	}
-
-	db, err := sql.Open("sqlite3", "./db/database.db")
+	engine, err := identify_engine(string(body))
 	if err != nil {
-		logger.Error("Could not connect to the database %v", err)
-		return // Must return if db connection fails
+		logger.Error("Could not identify engine", err)
 	}
-	defer db.Close()
 
-	// Fixed typo: "last_scaned" to "last_scanned" (ensure this matches your SQL schema)
-	query := `UPDATE forums SET last_scaned = ?, forum_html = ?, forum_screenshot = ? WHERE forum_url = ?`
-
+	query := `UPDATE forums SET last_scaned = ?, forum_html = ?, forum_screenshot = ?, forum_engine = ? WHERE forum_url = ?`
 	statement, err := db.Prepare(query)
 	if err != nil {
-		logger.Error("Could not prepare the database statement %v", err)
+		logger.Error("Could not prepare the database statement", err)
 		return
 	}
 	defer statement.Close()
 
-	// 2. Execute with parameters
-	_, err = statement.Exec(time.Now(), paths[0], paths[1], target)
+	_, err = statement.Exec(time.Now(), paths[0], paths[1], engine, target)
 	if err != nil {
-		logger.Error("Could not update forum in the database %v", err)
+		logger.Error("Could not update forum in the database", err)
 		return
 	}
+	logger.Info("Successfully updated the last scan", "name", name)
+}
 
-	// Fixed typos in log message
-	logger.Info("Successfully updated the last scan of %v", name)
+func identify_engine(html_body string) (string, error) {
+	engines := map[string]string{
+		`id="XF"`:       "XenForo",
+		"my_post_key":   "MyBB",
+		"wp-content":    "WordPress",
+		"machina":       "Machina",
+		"milligram.css": "RansomEXX-Custom",
+	}
+	for signature, engine := range engines {
+		if strings.Contains(html_body, signature) {
+			return engine, nil
+		}
+	}
+	return "Unknown", nil
 }
