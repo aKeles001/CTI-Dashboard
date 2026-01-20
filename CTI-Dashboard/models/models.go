@@ -22,3 +22,9 @@ type Post struct {
 	PostAuthor  string `json:"author"`
 	PostDate    string `json:"date"`
 }
+
+type Job struct {
+	JobID     string `json:"job_id"`
+	ThreadURL string `json:"thread_url"`
+	ForumName string `json:"forum_name"`
+}

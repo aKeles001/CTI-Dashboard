@@ -14,4 +14,7 @@ type Config struct {
 	// Output
 	OutputDir  string
 	ReportFile string
+
+	// Workers
+	Workers int
 }

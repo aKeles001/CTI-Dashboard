@@ -6,6 +6,7 @@ import (
 	"context"
 	"database/sql"
 	"encoding/json"
+	"errors"
 	"fmt"
 	"io"
 	"net/http"
@@ -108,7 +109,58 @@ func Run(opts Options) error {
 				UpdateLastScan(target, opts.TargetName, paths, opts.DB, body)
 				break
 			}
-			return err
+			response.Body.Close()
+			return fmt.Errorf("request failed with status: %s", response.Status)
+		}
+	}
+	return err
+}
+
+func RunPost(opts Options) error {
+	scanner := NewScanner(opts.Client, opts.Writer, opts.Timeout, opts.Proxy)
+	response, err := scanner.checkTorStatus()
+	if err != nil {
+		logger.Error("Failed to check Tor status: ", "error", err)
+		return err
+	} else {
+		if response.IsTor {
+			logger.Info("Connected to Tor network", "IP", response.IP)
+		} else {
+			logger.Error("Not connected to Tor network")
+			return errors.New("not connected to Tor network")
+		}
+	}
+	for _, target := range opts.Targets {
+		fmt.Printf("Scanning target: %s  (Name: %s)\n", target, opts.TargetName)
+		for i := 0; i < opts.Retries; i++ {
+			fmt.Printf("Scraping - Attempt %d/3\n", i+1)
+			response, err := opts.Client.Get(target)
+			if err != nil {
+				logger.Error("Request failed", "error", err, "target", target, "attempt", i+1)
+				time.Sleep(time.Duration(i+1) * 2 * time.Second)
+				if i == opts.Retries-1 {
+					return err
+				}
+				continue
+			}
+			if response.StatusCode == http.StatusOK {
+				body, err := io.ReadAll(response.Body)
+				if err != nil {
+					logger.Error("Failed to read response body", "error", err, "target", target)
+					fmt.Println(body)
+					response.Body.Close()
+					if i == opts.Retries-1 {
+						return err
+					}
+					continue
+				}
+				response.Body.Close()
+				logger.Info("Successfully scraped target", "target", target)
+				UpdateLastScanPost(target, opts.DB, body)
+				break
+			}
+			response.Body.Close()
+			return fmt.Errorf("request failed with status: %s", response.Status)
 		}
 	}
 	return err
@@ -189,6 +241,22 @@ func UpdateLastScan(target string, name string, paths []string, db *sql.DB, body
 		return
 	}
 	logger.Info("Successfully updated the last scan", "name", name)
+}
+
+func UpdateLastScanPost(target string, db *sql.DB, body []byte) {
+	statement, err := db.Prepare(`UPDATE posts SET content = ? WHERE thread_url = ?`)
+	if err != nil {
+		logger.Error("Could not prepare the database statement", err)
+		return
+	}
+	defer statement.Close()
+
+	_, err = statement.Exec(body, target)
+	if err != nil {
+		logger.Error("Could not update forum in the database", err)
+		return
+	}
+	logger.Info("Successfully updated the last scan", "URL", target)
 }
 
 func identify_engine(html_body string) (string, error) {

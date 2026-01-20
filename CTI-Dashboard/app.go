@@ -6,6 +6,8 @@ import (
 	"errors"
 	"fmt"
 	"net/http"
+	"sync"
+	"time"
 
 	"CTI-Dashboard/models"
 	"CTI-Dashboard/scraper/config"
@@ -25,6 +27,7 @@ type App struct {
 	client *http.Client
 	writer *output.Writer
 	db     *sql.DB
+	wg     sync.WaitGroup
 }
 
 func NewApp(cfg config.Config, client *http.Client, writer *output.Writer, db *sql.DB) *App {
@@ -194,12 +197,85 @@ func (a *App) GetPosts(forumID string) ([]models.Post, error) {
 }
 
 func (a *App) ScanPosts(forumID string) error {
-	statement, err := a.db.Prepare(`SELECT post_id, thread_url FROM posts WHERE forum_id = ? and status = 'pending'`)
+	statement, err := a.db.Prepare(`SELECT p.post_id, p.thread_url, f.forum_name FROM posts p JOIN forums f ON p.forum_id = f.forum_id WHERE p.forum_id = ?`)
 	if err != nil {
 		logger.Error("Could not prepare statement", "error", err)
 		return err
 	}
-	fmt.Print(statement)
+	defer statement.Close()
 
+	rows, err := statement.Query(forumID)
+	if err != nil {
+		logger.Error("Could not fetch the rows", "error", err)
+		return err
+	}
+	defer rows.Close()
+
+	var allJobs []models.Job
+	for rows.Next() {
+		var job models.Job
+		var threadUrl sql.NullString
+		err := rows.Scan(&job.JobID, &threadUrl, &job.ForumName)
+		if err != nil {
+			logger.Error("Could not scan job row", "error", err)
+			continue
+		}
+		if threadUrl.Valid {
+			job.ThreadURL = threadUrl.String
+		}
+		allJobs = append(allJobs, job)
+	}
+	if err = rows.Err(); err != nil {
+		logger.Error("Error during rows iteration", "error", err)
+		return err
+	}
+
+	batchSize := a.cfg.Workers
+	if batchSize <= 0 {
+		batchSize = 10
+	}
+
+	numJobs := len(allJobs)
+	for i := 0; i < numJobs; i += batchSize {
+		end := i + batchSize
+		if end > numJobs {
+			end = numJobs
+		}
+		batch := allJobs[i:end]
+		logger.Info("Processing batch", "start", i, "end", end-1, "total_jobs", numJobs)
+
+		var batchWg sync.WaitGroup
+		batchWg.Add(len(batch))
+
+		for _, job := range batch {
+			go func(j models.Job) {
+				defer batchWg.Done()
+
+				logger.Info("Processing job", "JobID", j.JobID)
+				err := scanner.RunPost(scanner.Options{
+					Targets:    []string{j.ThreadURL},
+					Client:     a.client,
+					Writer:     a.writer,
+					Timeout:    a.cfg.Timeout,
+					Retries:    a.cfg.MaxRetries,
+					TargetName: j.ForumName,
+					Proxy:      a.cfg.TorProxy,
+					DB:         a.db,
+				})
+
+				if err != nil {
+					logger.Error("Job failed", "id", j.JobID, "error", err, "Post URL", j.ThreadURL)
+					a.db.Exec("UPDATE posts SET status = 'failed' WHERE post_id = ?", j.JobID)
+				} else {
+					a.db.Exec("UPDATE posts SET status = 'scraped' WHERE post_id = ?", j.JobID)
+				}
+				time.Sleep(50 * time.Second)
+			}(job)
+		}
+
+		batchWg.Wait()
+		logger.Info("Batch finished.", "size", len(batch))
+	}
+	logger.Info("All posts are scanned")
 	return nil
 }

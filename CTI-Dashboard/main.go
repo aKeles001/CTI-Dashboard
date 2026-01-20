@@ -27,6 +27,7 @@ func main() {
 		OutputDir:  "output/",
 		TorProxy:   "127.0.0.1:9050",
 		TargetFile: "targets.yaml",
+		Workers:    5,
 	}
 	db, err := sql.Open("sqlite3", "./db/database.db")
 	if err != nil {

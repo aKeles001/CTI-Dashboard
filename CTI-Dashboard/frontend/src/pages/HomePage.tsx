@@ -11,19 +11,17 @@ const HomePage: React.FC = () => {
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [result, setResult] = useState('');
-  const [last_scaned, setLastScaned] = useState('');
 
 
 const handleSubmit = (e: React.FormEvent) => {
   e.preventDefault();
-  const forumData = { forum_id: '', forum_url: url, forum_name: name, forum_description: description, last_scaned: last_scaned, forum_html: '', forum_screenshot: '' };
+  const forumData = { forum_id: '', forum_url: url, forum_name: name, forum_description: description, last_scaned: '', forum_html: '', forum_screenshot: '', forum_engine: '' };
   CreateForum(forumData)
     .then((resultMessage: string) => {
       setResult(resultMessage);
       setName('');
       setUrl('');
       setDescription('');
-      setLastScaned('');
       toast.success("Forum Created");
     }).catch((errorMessage: string) => {
       setResult(errorMessage);

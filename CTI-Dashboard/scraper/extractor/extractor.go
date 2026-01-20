@@ -4,6 +4,7 @@ import (
 	"CTI-Dashboard/scraper/logger"
 
 	"database/sql"
+	"net/url"
 	"os"
 	"strings"
 
@@ -55,6 +56,7 @@ func PostExtract(forum_id string, db *sql.DB) (int, error) {
 			logger.Error("Could not process extracted links", "error", err)
 			return 0, err
 		}
+
 		extractor(doc, db, forum_id)
 		return len(links), nil
 	}
@@ -74,14 +76,21 @@ func extractor_XF(doc *goquery.Document, db *sql.DB, forum_id string) (string, e
 
 func ExtractThreadLinks(doc *goquery.Document, baseURL string) []string {
 	var links []string
-
-	// This selector targets the main thread title links in your file
+	parsedURL, err := url.Parse(baseURL)
+	if err != nil {
+		logger.Error("Could not parse base URL", "url", baseURL, "error", err)
+		return links
+	}
+	rootURL := parsedURL.Scheme + "://" + parsedURL.Host
 	doc.Find("div.structItem-title a").Each(func(i int, s *goquery.Selection) {
 		href, exists := s.Attr("href")
 		if exists && strings.Contains(href, "/threads/") {
-			// Clean up internal links and make them absolute
-			fullURL := baseURL + strings.TrimPrefix(href, "/")
-			links = append(links, fullURL)
+			threadIndex := strings.Index(href, "/threads/")
+			if threadIndex != -1 {
+				correctedHref := href[threadIndex:]
+				fullURL := rootURL + correctedHref
+				links = append(links, fullURL)
+			}
 		}
 	})
 

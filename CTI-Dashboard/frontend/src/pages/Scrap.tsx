@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GetForums, Extract_posts, GetPosts} from '../../wailsjs/go/main/App';
+import { GetForums, Extract_posts, GetPosts, ScanPosts} from '../../wailsjs/go/main/App';
 import { models } from '../../wailsjs/go/models';
 import { toast } from "sonner"
 import { Button } from '@/components/ui/button';
@@ -55,6 +55,14 @@ const Scrap: React.FC = () => {
       })
       .finally(() => {
         setIsLoadingPosts(false);
+      });
+    ScanPosts(forumId)
+      .then(() => {
+        toast.success("Posts scanned successfully");
+      })
+      .catch((err) => {
+        setError(err);
+        toast.error("Failed to scan posts");
       });
   };
 
