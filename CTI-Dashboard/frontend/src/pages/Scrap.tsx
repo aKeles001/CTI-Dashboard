@@ -42,8 +42,21 @@ const Scrap: React.FC = () => {
     });
   };
 
-  const handleGetPosts = (forumId: string) => {
+  const handleGetPosts1 = (forumId: string) => {
     setIsLoadingPosts(true);
+    ScanPosts(forumId)
+      .then(() => {
+        toast.success("Posts scanned successfully");
+      })
+      .catch((err) => {
+        setError(err);
+        toast.error("Failed to scan posts");
+      }).finally(() => {
+        setIsLoadingPosts(false);
+      });
+  
+  }
+  const handleGetPosts = (forumId: string) => {
     GetPosts(forumId)
       .then((data) => {
         setPosts(data);
@@ -55,14 +68,6 @@ const Scrap: React.FC = () => {
       })
       .finally(() => {
         setIsLoadingPosts(false);
-      });
-    ScanPosts(forumId)
-      .then(() => {
-        toast.success("Posts scanned successfully");
-      })
-      .catch((err) => {
-        setError(err);
-        toast.error("Failed to scan posts");
       });
   };
 
@@ -102,6 +107,14 @@ const Scrap: React.FC = () => {
                         >
                             {isLoadingPosts ? 'Loading Posts...' : 'Show Posts'}
                         </Button>
+                        <Button
+                            className="sm:w-full"
+                            size="lg"
+                            onClick={() => handleGetPosts1(forum.forum_id)}
+                            disabled={isLoadingPosts}
+                        >
+                            {isLoadingPosts ? 'Loading Posts...' : 'Show Posts1'}
+                        </Button>
                         </div>
 
                         {posts.length > 0 && (
@@ -110,13 +123,8 @@ const Scrap: React.FC = () => {
                                 <ul className="space-y-4">
                                     {posts.map((post, index) => (
                                         <li key={index} className="border p-4 rounded-lg">
-                                            <h3 className="text-lg font-semibold">{post.author}</h3>
-                                            <p className="text-sm text-gray-500">{new Date(post.date).toLocaleString()}</p>
                                             <p className="text-sm text-gray-500">{post.status}</p>
-                                            <p className="mt-2">{post.content}</p>
-                                            <p className="mt-2">{post.status}</p>
-                                            <p className="mt-2">{post.severity_level}</p>
-                                            <a href={post.thread_url} target="_blank" rel="noopener noreferrer" className="text-blue-500 hover:underline mt-2 inline-block">View Post</a>
+                                            <p className="text-sm text-gray-500">{post.severity_level}</p>
                                         </li>
                                     ))}
                                 </ul>

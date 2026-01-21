@@ -159,7 +159,7 @@ func (a *App) Extract_posts(forum_id string) (int, error) {
 }
 
 func (a *App) GetPosts(forumID string) ([]models.Post, error) {
-	statement, err := a.db.Prepare(`SELECT post_id, forum_id, thread_url, author, content, date FROM posts WHERE forum_id = ?`)
+	statement, err := a.db.Prepare(`SELECT post_id, forum_id, thread_url, author, content, date, status, severity_level FROM posts WHERE forum_id = ?`)
 	if err != nil {
 		logger.Error("Could not prepare statement", "error", err)
 		return nil, err
@@ -177,7 +177,7 @@ func (a *App) GetPosts(forumID string) ([]models.Post, error) {
 	for rows.Next() {
 		var post models.Post
 		var threadUrl sql.NullString
-		err := rows.Scan(&post.PostID, &post.ForumID, &threadUrl, &post.PostAuthor, &post.PostContent, &post.PostDate)
+		err := rows.Scan(&post.PostID, &post.ForumID, &threadUrl, &post.PostAuthor, &post.PostContent, &post.PostDate, &post.Status, &post.Severity)
 		if err != nil {
 			logger.Error("Could not scan post row", "error", err)
 			continue
@@ -269,7 +269,7 @@ func (a *App) ScanPosts(forumID string) error {
 				} else {
 					a.db.Exec("UPDATE posts SET status = 'scraped' WHERE post_id = ?", j.JobID)
 				}
-				time.Sleep(50 * time.Second)
+				time.Sleep(30 * time.Second)
 			}(job)
 		}
 

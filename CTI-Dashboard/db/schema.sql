@@ -20,11 +20,11 @@ CREATE TABLE IF NOT EXISTS posts (
     forum_id TEXT,
     thread_url TEXT UNIQUE,
     status TEXT DEFAULT 'pending', -- pending, scraped, analyzed, failed
-    severity_level NUMERIC DEFAULT 0,
+    severity_level TEXT DEFAULT 'unassigned', -- unassigned, low, medium, high
     title TEXT,
     content TEXT,
     author TEXT,
     date TEXT,
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY(forum_id) REFERENCES forums(forum_id)
+    FOREIGN KEY(forum_id) REFERENCES forums(forum_id) ON DELETE CASCADE
 );

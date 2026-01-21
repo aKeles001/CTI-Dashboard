@@ -101,8 +101,8 @@ func ProcessExtractedLinks(forumID string, links []string, db *sql.DB) error {
 	for _, link := range links {
 		post_id := uuid.New().String()
 		_, err := db.Exec(`
-            INSERT OR IGNORE INTO posts (post_id, forum_id, thread_url, status, severity_level, title, content, author, date) 
-            VALUES (?, ?, ?,  'pending', '', '', '', '', '')`,
+            INSERT OR IGNORE INTO posts (post_id, forum_id, thread_url, status, title, content, author, date) 
+            VALUES (?, ?, ?, 'pending', '', '', '', '')`,
 			post_id, forumID, link,
 		)
 		if err != nil {

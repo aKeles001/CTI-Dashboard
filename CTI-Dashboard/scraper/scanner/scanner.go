@@ -3,6 +3,7 @@ package scanner
 import (
 	"CTI-Dashboard/scraper/logger"
 	"CTI-Dashboard/scraper/output"
+	"CTI-Dashboard/scraper/severity"
 	"context"
 	"database/sql"
 	"encoding/json"
@@ -157,6 +158,12 @@ func RunPost(opts Options) error {
 				response.Body.Close()
 				logger.Info("Successfully scraped target", "target", target)
 				UpdateLastScanPost(target, opts.DB, body)
+
+				postBody := strings.NewReader(string(body))
+				err = severity.AssessSeverity(postBody, opts.DB, target)
+				if err != nil {
+					logger.Error("Failed to assess severity", "error", err, "target", target)
+				}
 				break
 			}
 			response.Body.Close()
