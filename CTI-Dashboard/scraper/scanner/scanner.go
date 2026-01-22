@@ -241,8 +241,8 @@ func UpdateLastScan(target string, name string, paths []string, db *sql.DB, body
 		return
 	}
 	defer statement.Close()
-
-	_, err = statement.Exec(time.Now(), paths[0], paths[1], engine, target)
+	ts := time.Now().Format("2006-01-02 15:04:05")
+	_, err = statement.Exec(ts, paths[0], paths[1], engine, target)
 	if err != nil {
 		logger.Error("Could not update forum in the database", err)
 		return

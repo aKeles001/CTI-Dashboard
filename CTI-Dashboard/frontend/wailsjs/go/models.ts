@@ -1,5 +1,33 @@
 export namespace models {
 	
+	export class Chart {
+	    forum_id: string;
+	    forum_name: string;
+	    forum_url: string;
+	    count: number;
+	    high: number;
+	    medium: number;
+	    low: number;
+	    unassigned: number;
+	    last_scaned: string;
+	
+	    static createFrom(source: any = {}) {
+	        return new Chart(source);
+	    }
+	
+	    constructor(source: any = {}) {
+	        if ('string' === typeof source) source = JSON.parse(source);
+	        this.forum_id = source["forum_id"];
+	        this.forum_name = source["forum_name"];
+	        this.forum_url = source["forum_url"];
+	        this.count = source["count"];
+	        this.high = source["high"];
+	        this.medium = source["medium"];
+	        this.low = source["low"];
+	        this.unassigned = source["unassigned"];
+	        this.last_scaned = source["last_scaned"];
+	    }
+	}
 	export class Forum {
 	    forum_id: string;
 	    forum_url: string;

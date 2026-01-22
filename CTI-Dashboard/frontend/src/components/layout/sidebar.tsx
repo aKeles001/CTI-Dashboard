@@ -17,6 +17,11 @@ export function AppSidebar() {
         <SidebarGroup>
           <SidebarMenu>
             <SidebarMenuItem>
+              <Link to="/dashboard" className="w-full">
+                Dashboard
+              </Link>
+            </SidebarMenuItem>
+            <SidebarMenuItem>
               <Link to="/homepage" className="w-full">
                 Home Page
               </Link>
@@ -27,11 +32,6 @@ export function AppSidebar() {
               </Link>
             </SidebarMenuItem>
             <SidebarMenuItem>
-              <Link to="/threats" className="w-full">
-                Threats
-              </Link>
-            </SidebarMenuItem>
-            <SidebarMenuItem>
               <Link to="/scrap" className="w-full">
                 Scrap
               </Link>
@@ -39,7 +39,7 @@ export function AppSidebar() {
           </SidebarMenu>
         </SidebarGroup>
       </SidebarContent>
-      <SidebarFooter />
+      <SidebarFooter/>
     </Sidebar>
   );
 }

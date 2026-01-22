@@ -3793,3 +3793,946 @@ time=2026-01-21T17:05:27.688Z level=INFO msg="Severity: " !BADKEY="&{Nodes:[0xc0
 time=2026-01-21T17:05:57.688Z level=INFO msg="Batch finished." size=3
 time=2026-01-21T17:05:57.689Z level=INFO msg="All posts are scanned"
 time=2026-01-21T17:07:27.503Z level=INFO msg="Successfully deleted forum" id=aebef50a-5ae3-4125-b49d-3d425d3aaa6d
+time=2026-01-22T15:21:56.554Z level=ERROR msg="Could not prepare the database statement" error="no such table: forums"
+time=2026-01-22T15:21:56.556Z level=ERROR msg="Could not prepare the database statement" error="no such table: forums"
+time=2026-01-22T15:22:01.999Z level=ERROR msg="Could not prepare the database statement" error="no such table: forums"
+time=2026-01-22T15:22:01.999Z level=ERROR msg="Could not prepare the database statement" error="no such table: forums"
+time=2026-01-22T15:23:12.230Z level=INFO msg="Successfully added forum" name=Forum
+time=2026-01-22T15:23:19.490Z level=INFO msg="Connected to Tor network" IP=176.65.149.186
+time=2026-01-22T15:23:56.153Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/forums/hacking.88/
+time=2026-01-22T15:23:56.170Z level=INFO msg="Successfully updated the last scan" name=Forum
+time=2026-01-22T15:23:56.170Z level=INFO msg="Successfully scraped forum" name=Forum
+time=2026-01-22T15:24:20.015Z level=INFO msg="Processing batch" start=0 end=4 total_jobs=20
+time=2026-01-22T15:24:20.015Z level=INFO msg="Processing job" JobID=dba2324f-6323-45cf-9c82-b5bb28da48f6
+time=2026-01-22T15:24:20.015Z level=INFO msg="Processing job" JobID=0cea8b61-c541-4e68-afa4-a2d064664a47
+time=2026-01-22T15:24:20.015Z level=INFO msg="Processing job" JobID=a0584014-18c4-41e2-b52f-3cc81fe25aab
+time=2026-01-22T15:24:20.015Z level=INFO msg="Processing job" JobID=eedb9bb7-dc61-46d7-ab8d-b4482e152c03
+time=2026-01-22T15:24:20.015Z level=INFO msg="Processing job" JobID=c78840c1-66b1-4d57-8371-dfd99bd10668
+time=2026-01-22T15:24:20.464Z level=ERROR msg="Failed to check Tor status: " error="Get \"https://check.torproject.org/api/ip\": EOF"
+time=2026-01-22T15:24:20.464Z level=ERROR msg="Job failed" id=c78840c1-66b1-4d57-8371-dfd99bd10668 error="Get \"https://check.torproject.org/api/ip\": EOF" "Post URL"=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/attack-with-webview2-applications.3718/
+time=2026-01-22T15:24:20.542Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:24:20.634Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:24:20.643Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:24:20.666Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:24:21.629Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/chainsaw-for-analize.1868/
+time=2026-01-22T15:24:21.645Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/chainsaw-for-analize.1868/
+time=2026-01-22T15:24:21.650Z level=INFO msg="Severity: " !BADKEY=0xc0002ac058
+time=2026-01-22T15:24:22.038Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-hacking-2025-a-practical-guide.14163/
+time=2026-01-22T15:24:22.051Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-hacking-2025-a-practical-guide.14163/
+time=2026-01-22T15:24:22.058Z level=INFO msg="Severity: " !BADKEY=0xc000306058
+time=2026-01-22T15:24:22.353Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/vpn-hacking-how-vpns-work-and-how-they-break-our-security.2417/
+time=2026-01-22T15:24:22.366Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/vpn-hacking-how-vpns-work-and-how-they-break-our-security.2417/
+time=2026-01-22T15:24:22.375Z level=INFO msg="Severity: " !BADKEY=0xc000306058
+time=2026-01-22T15:24:22.622Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/create-password-lists-dehash-passwords-easy-tutorial.11591/
+time=2026-01-22T15:24:22.637Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/create-password-lists-dehash-passwords-easy-tutorial.11591/
+time=2026-01-22T15:24:22.642Z level=INFO msg="Severity: " !BADKEY=0xc0003060d8
+time=2026-01-22T15:24:52.655Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:24:52.655Z level=INFO msg="Processing batch" start=5 end=9 total_jobs=20
+time=2026-01-22T15:24:52.655Z level=INFO msg="Processing job" JobID=7785f66c-086f-452c-9084-33328ae8750f
+time=2026-01-22T15:24:52.655Z level=INFO msg="Processing job" JobID=f901c28a-bc70-4a85-b4c8-6d8061fcbc87
+time=2026-01-22T15:24:52.655Z level=INFO msg="Processing job" JobID=393f2dc7-a4d3-469e-a094-75246db849b4
+time=2026-01-22T15:24:52.656Z level=INFO msg="Processing job" JobID=4fe83201-fe10-4ab6-b024-d7818272e1fe
+time=2026-01-22T15:24:52.657Z level=INFO msg="Processing job" JobID=76bee9fb-6221-4d26-a9fc-ce66722ae5c4
+time=2026-01-22T15:24:53.139Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:24:53.149Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:24:53.207Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:24:53.291Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:24:53.345Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:24:54.638Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/ebpf-and-tetragon-a-revolution-in-linux-monitoring-and-security.1867/
+time=2026-01-22T15:24:54.651Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/ebpf-and-tetragon-a-revolution-in-linux-monitoring-and-security.1867/
+time=2026-01-22T15:24:54.658Z level=INFO msg="Severity: " !BADKEY=0xc000306168
+time=2026-01-22T15:24:54.822Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/molotov-tv-checker.11760/
+time=2026-01-22T15:24:54.836Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/molotov-tv-checker.11760/
+time=2026-01-22T15:24:54.839Z level=INFO msg="Severity: " !BADKEY=0xc000306080
+time=2026-01-22T15:24:54.954Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/introducing-a-youtube-parser.11318/
+time=2026-01-22T15:24:54.977Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/introducing-a-youtube-parser.11318/
+time=2026-01-22T15:24:54.984Z level=INFO msg="Severity: " !BADKEY=0xc000306078
+time=2026-01-22T15:24:55.133Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hacking-a-github-repository-with-github-dorks.3730/
+time=2026-01-22T15:24:55.147Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hacking-a-github-repository-with-github-dorks.3730/
+time=2026-01-22T15:24:55.154Z level=INFO msg="Severity: " !BADKEY=0xc000594038
+time=2026-01-22T15:24:55.432Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/automated-cve-scanning-with-cvescannerv2.2625/
+time=2026-01-22T15:24:55.446Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/automated-cve-scanning-with-cvescannerv2.2625/
+time=2026-01-22T15:24:55.454Z level=INFO msg="Severity: " !BADKEY=0xc0002ac008
+time=2026-01-22T15:25:25.467Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:25:25.467Z level=INFO msg="Processing batch" start=10 end=14 total_jobs=20
+time=2026-01-22T15:25:25.467Z level=INFO msg="Processing job" JobID=12ba8b58-735e-4ad8-a836-395bdc080c0d
+time=2026-01-22T15:25:25.467Z level=INFO msg="Processing job" JobID=85e73f36-39d8-49d6-a8dd-df28dea2e13e
+time=2026-01-22T15:25:25.467Z level=INFO msg="Processing job" JobID=eb233918-cdd3-4313-8fff-a594fd10778d
+time=2026-01-22T15:25:25.467Z level=INFO msg="Processing job" JobID=4f72eef0-f076-4463-b7e1-002728d8a882
+time=2026-01-22T15:25:25.468Z level=INFO msg="Processing job" JobID=e6cdb85f-e1fb-469d-acaf-89c2c8e63ad6
+time=2026-01-22T15:25:25.868Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:25:25.928Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:25:25.947Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:25:25.987Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:25:26.048Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:25:27.046Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/common-wifi-hacking-attacks-techniques.3542/
+time=2026-01-22T15:25:27.064Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/common-wifi-hacking-attacks-techniques.3542/
+time=2026-01-22T15:25:27.084Z level=INFO msg="Severity: " !BADKEY=0xc00005e210
+time=2026-01-22T15:25:27.135Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-osint-for-yourself-a-practical-start-and-free-resources.2606/
+time=2026-01-22T15:25:27.150Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-osint-for-yourself-a-practical-start-and-free-resources.2606/
+time=2026-01-22T15:25:27.155Z level=INFO msg="Severity: " !BADKEY=0xc0003061d8
+time=2026-01-22T15:25:27.201Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/dubsmash-database-leaked-december-2018-free-download.3636/
+time=2026-01-22T15:25:27.217Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/dubsmash-database-leaked-december-2018-free-download.3636/
+time=2026-01-22T15:25:27.224Z level=INFO msg="Severity: " !BADKEY=0xc0003060c8
+time=2026-01-22T15:25:27.317Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-crack-any-software.3793/
+time=2026-01-22T15:25:27.332Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-crack-any-software.3793/
+time=2026-01-22T15:25:27.337Z level=INFO msg="Severity: " !BADKEY=0xc00005e210
+time=2026-01-22T15:25:27.537Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/new-telegram-evil-dropper-vulnerability-cve-2025-1450-full-details-and-poc.3704/
+time=2026-01-22T15:25:27.553Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/new-telegram-evil-dropper-vulnerability-cve-2025-1450-full-details-and-poc.3704/
+time=2026-01-22T15:25:27.560Z level=INFO msg="Severity: " !BADKEY=0xc000306080
+time=2026-01-22T15:25:57.577Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:25:57.578Z level=INFO msg="Processing batch" start=15 end=19 total_jobs=20
+time=2026-01-22T15:25:57.578Z level=INFO msg="Processing job" JobID=c6f1d67d-c1f5-4a11-9414-aca63fcb1bc7
+time=2026-01-22T15:25:57.578Z level=INFO msg="Processing job" JobID=7014603a-a824-443a-ad84-225176945110
+time=2026-01-22T15:25:57.579Z level=INFO msg="Processing job" JobID=3f36f795-e441-4c39-8a58-364f65758873
+time=2026-01-22T15:25:57.579Z level=INFO msg="Processing job" JobID=e55d8fd8-f7c0-4591-b21e-cd9482df64e0
+time=2026-01-22T15:25:57.579Z level=INFO msg="Processing job" JobID=5e787206-c923-461e-8dc2-2a5365d7f05f
+time=2026-01-22T15:25:58.011Z level=ERROR msg="Failed to check Tor status: " error="Get \"https://check.torproject.org/api/ip\": EOF"
+time=2026-01-22T15:25:58.011Z level=ERROR msg="Job failed" id=3f36f795-e441-4c39-8a58-364f65758873 error="Get \"https://check.torproject.org/api/ip\": EOF" "Post URL"=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hackus-mail-checker-3-11-free-update-leaked-2025-full-options.11765/
+time=2026-01-22T15:25:58.035Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:25:58.095Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:25:58.115Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:25:58.155Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:25:59.239Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/linux-basics-for-hackers-the-linux-logging-system.2645/
+time=2026-01-22T15:25:59.253Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/linux-basics-for-hackers-the-linux-logging-system.2645/
+time=2026-01-22T15:25:59.261Z level=INFO msg="Severity: " !BADKEY=0xc0003060d8
+time=2026-01-22T15:25:59.386Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/bypassing-next-generation-firewalls-with-fragtunnel.2626/
+time=2026-01-22T15:25:59.404Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/bypassing-next-generation-firewalls-with-fragtunnel.2626/
+time=2026-01-22T15:25:59.411Z level=INFO msg="Severity: " !BADKEY=0xc000594038
+time=2026-01-22T15:25:59.429Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-hackers-access-whatsapp-web-session.3703/
+time=2026-01-22T15:25:59.442Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-hackers-access-whatsapp-web-session.3703/
+time=2026-01-22T15:25:59.449Z level=INFO msg="Severity: " !BADKEY=0xc000594108
+time=2026-01-22T15:25:59.641Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/practical-guide-to-protecting-apis-from-owasp-top-10-vulnerabilities-python-examples.2604/
+time=2026-01-22T15:25:59.655Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/practical-guide-to-protecting-apis-from-owasp-top-10-vulnerabilities-python-examples.2604/
+time=2026-01-22T15:25:59.662Z level=INFO msg="Severity: " !BADKEY=0xc000306078
+time=2026-01-22T15:26:29.674Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:26:29.674Z level=INFO msg="All posts are scanned"
+time=2026-01-22T15:29:24.893Z level=INFO msg="Processing batch" start=0 end=4 total_jobs=20
+time=2026-01-22T15:29:24.893Z level=INFO msg="Processing job" JobID=dba2324f-6323-45cf-9c82-b5bb28da48f6
+time=2026-01-22T15:29:24.893Z level=INFO msg="Processing job" JobID=0cea8b61-c541-4e68-afa4-a2d064664a47
+time=2026-01-22T15:29:24.893Z level=INFO msg="Processing job" JobID=a0584014-18c4-41e2-b52f-3cc81fe25aab
+time=2026-01-22T15:29:24.893Z level=INFO msg="Processing job" JobID=eedb9bb7-dc61-46d7-ab8d-b4482e152c03
+time=2026-01-22T15:29:24.893Z level=INFO msg="Processing job" JobID=c78840c1-66b1-4d57-8371-dfd99bd10668
+time=2026-01-22T15:29:25.350Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:29:25.410Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:29:25.448Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:29:25.533Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:29:25.533Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:29:26.940Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/chainsaw-for-analize.1868/
+time=2026-01-22T15:29:26.980Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/chainsaw-for-analize.1868/
+time=2026-01-22T15:29:26.985Z level=INFO msg="Severity: " !BADKEY=0xc000398018
+time=2026-01-22T15:29:27.033Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/attack-with-webview2-applications.3718/
+time=2026-01-22T15:29:27.054Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/attack-with-webview2-applications.3718/
+time=2026-01-22T15:29:27.061Z level=INFO msg="Severity: " !BADKEY=0xc0003980a8
+time=2026-01-22T15:29:27.109Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-hacking-2025-a-practical-guide.14163/
+time=2026-01-22T15:29:27.148Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-hacking-2025-a-practical-guide.14163/
+time=2026-01-22T15:29:27.154Z level=INFO msg="Severity: " !BADKEY=0xc000398178
+time=2026-01-22T15:29:27.210Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/vpn-hacking-how-vpns-work-and-how-they-break-our-security.2417/
+time=2026-01-22T15:29:27.232Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/vpn-hacking-how-vpns-work-and-how-they-break-our-security.2417/
+time=2026-01-22T15:29:27.241Z level=INFO msg="Severity: " !BADKEY=0xc000398260
+time=2026-01-22T15:29:27.392Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/create-password-lists-dehash-passwords-easy-tutorial.11591/
+time=2026-01-22T15:29:27.547Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/create-password-lists-dehash-passwords-easy-tutorial.11591/
+time=2026-01-22T15:29:27.552Z level=INFO msg="Severity: " !BADKEY=0xc000398030
+time=2026-01-22T15:29:57.553Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:29:57.553Z level=INFO msg="Processing batch" start=5 end=9 total_jobs=20
+time=2026-01-22T15:29:57.553Z level=INFO msg="Processing job" JobID=7785f66c-086f-452c-9084-33328ae8750f
+time=2026-01-22T15:29:57.553Z level=INFO msg="Processing job" JobID=4fe83201-fe10-4ab6-b024-d7818272e1fe
+time=2026-01-22T15:29:57.553Z level=INFO msg="Processing job" JobID=393f2dc7-a4d3-469e-a094-75246db849b4
+time=2026-01-22T15:29:57.553Z level=INFO msg="Processing job" JobID=f901c28a-bc70-4a85-b4c8-6d8061fcbc87
+time=2026-01-22T15:29:57.553Z level=INFO msg="Processing job" JobID=76bee9fb-6221-4d26-a9fc-ce66722ae5c4
+time=2026-01-22T15:29:57.999Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:29:58.006Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:29:58.065Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:29:58.126Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:29:58.186Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:29:59.751Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/introducing-a-youtube-parser.11318/
+time=2026-01-22T15:29:59.751Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/ebpf-and-tetragon-a-revolution-in-linux-monitoring-and-security.1867/
+time=2026-01-22T15:29:59.783Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/introducing-a-youtube-parser.11318/
+time=2026-01-22T15:29:59.799Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/ebpf-and-tetragon-a-revolution-in-linux-monitoring-and-security.1867/
+time=2026-01-22T15:29:59.804Z level=INFO msg="Severity: " !BADKEY=0xc00005e078
+time=2026-01-22T15:29:59.806Z level=INFO msg="Severity: " !BADKEY=0xc00005e220
+time=2026-01-22T15:29:59.857Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/molotov-tv-checker.11760/
+time=2026-01-22T15:29:59.893Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/molotov-tv-checker.11760/
+time=2026-01-22T15:29:59.898Z level=INFO msg="Severity: " !BADKEY=0xc00005e3e8
+time=2026-01-22T15:30:00.130Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hacking-a-github-repository-with-github-dorks.3730/
+time=2026-01-22T15:30:00.268Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hacking-a-github-repository-with-github-dorks.3730/
+time=2026-01-22T15:30:00.279Z level=INFO msg="Severity: " !BADKEY=0xc00005e078
+time=2026-01-22T15:30:00.310Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/automated-cve-scanning-with-cvescannerv2.2625/
+time=2026-01-22T15:30:00.350Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/automated-cve-scanning-with-cvescannerv2.2625/
+time=2026-01-22T15:30:00.359Z level=INFO msg="Severity: " !BADKEY=0xc00005e078
+time=2026-01-22T15:30:35.306Z level=INFO msg="Processing batch" start=0 end=4 total_jobs=20
+time=2026-01-22T15:30:35.306Z level=INFO msg="Processing job" JobID=dba2324f-6323-45cf-9c82-b5bb28da48f6
+time=2026-01-22T15:30:35.306Z level=INFO msg="Processing job" JobID=0cea8b61-c541-4e68-afa4-a2d064664a47
+time=2026-01-22T15:30:35.306Z level=INFO msg="Processing job" JobID=a0584014-18c4-41e2-b52f-3cc81fe25aab
+time=2026-01-22T15:30:35.306Z level=INFO msg="Processing job" JobID=eedb9bb7-dc61-46d7-ab8d-b4482e152c03
+time=2026-01-22T15:30:35.306Z level=INFO msg="Processing job" JobID=c78840c1-66b1-4d57-8371-dfd99bd10668
+time=2026-01-22T15:30:35.701Z level=ERROR msg="Failed to check Tor status: " error="Get \"https://check.torproject.org/api/ip\": EOF"
+time=2026-01-22T15:30:35.701Z level=ERROR msg="Job failed" id=dba2324f-6323-45cf-9c82-b5bb28da48f6 error="Get \"https://check.torproject.org/api/ip\": EOF" "Post URL"=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/chainsaw-for-analize.1868/
+time=2026-01-22T15:30:35.761Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:30:35.787Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:30:35.821Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:30:35.847Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:30:37.024Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-hacking-2025-a-practical-guide.14163/
+time=2026-01-22T15:30:37.037Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-hacking-2025-a-practical-guide.14163/
+time=2026-01-22T15:30:37.044Z level=INFO msg="Severity: " !BADKEY=0xc00046c020
+time=2026-01-22T15:30:37.598Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/vpn-hacking-how-vpns-work-and-how-they-break-our-security.2417/
+time=2026-01-22T15:30:37.602Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/attack-with-webview2-applications.3718/
+time=2026-01-22T15:30:37.619Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/vpn-hacking-how-vpns-work-and-how-they-break-our-security.2417/
+time=2026-01-22T15:30:37.638Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/attack-with-webview2-applications.3718/
+time=2026-01-22T15:30:37.645Z level=INFO msg="Severity: " !BADKEY=0xc000312098
+time=2026-01-22T15:30:37.647Z level=INFO msg="Severity: " !BADKEY=0xc000312048
+time=2026-01-22T15:30:37.690Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/create-password-lists-dehash-passwords-easy-tutorial.11591/
+time=2026-01-22T15:30:37.704Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/create-password-lists-dehash-passwords-easy-tutorial.11591/
+time=2026-01-22T15:30:37.709Z level=INFO msg="Severity: " !BADKEY=0xc0003121c8
+time=2026-01-22T15:31:07.710Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:31:07.711Z level=INFO msg="Processing batch" start=5 end=9 total_jobs=20
+time=2026-01-22T15:31:07.711Z level=INFO msg="Processing job" JobID=7785f66c-086f-452c-9084-33328ae8750f
+time=2026-01-22T15:31:07.711Z level=INFO msg="Processing job" JobID=393f2dc7-a4d3-469e-a094-75246db849b4
+time=2026-01-22T15:31:07.711Z level=INFO msg="Processing job" JobID=4fe83201-fe10-4ab6-b024-d7818272e1fe
+time=2026-01-22T15:31:07.711Z level=INFO msg="Processing job" JobID=f901c28a-bc70-4a85-b4c8-6d8061fcbc87
+time=2026-01-22T15:31:07.711Z level=INFO msg="Processing job" JobID=76bee9fb-6221-4d26-a9fc-ce66722ae5c4
+time=2026-01-22T15:31:08.065Z level=ERROR msg="Failed to check Tor status: " error="Get \"https://check.torproject.org/api/ip\": EOF"
+time=2026-01-22T15:31:08.065Z level=ERROR msg="Job failed" id=4fe83201-fe10-4ab6-b024-d7818272e1fe error="Get \"https://check.torproject.org/api/ip\": EOF" "Post URL"=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/ebpf-and-tetragon-a-revolution-in-linux-monitoring-and-security.1867/
+time=2026-01-22T15:31:08.140Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:31:08.140Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:31:08.200Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:31:08.260Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:31:09.582Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/automated-cve-scanning-with-cvescannerv2.2625/
+time=2026-01-22T15:31:09.597Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/automated-cve-scanning-with-cvescannerv2.2625/
+time=2026-01-22T15:31:09.604Z level=INFO msg="Severity: " !BADKEY=0xc0002b2038
+time=2026-01-22T15:31:09.717Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/introducing-a-youtube-parser.11318/
+time=2026-01-22T15:31:09.731Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/introducing-a-youtube-parser.11318/
+time=2026-01-22T15:31:09.736Z level=INFO msg="Severity: " !BADKEY=0xc0002b2040
+time=2026-01-22T15:31:10.037Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/molotov-tv-checker.11760/
+time=2026-01-22T15:31:10.054Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/molotov-tv-checker.11760/
+time=2026-01-22T15:31:10.062Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hacking-a-github-repository-with-github-dorks.3730/
+time=2026-01-22T15:31:10.066Z level=INFO msg="Severity: " !BADKEY=0xc0002b2040
+time=2026-01-22T15:31:10.082Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hacking-a-github-repository-with-github-dorks.3730/
+time=2026-01-22T15:31:10.089Z level=INFO msg="Severity: " !BADKEY=0xc000586010
+time=2026-01-22T15:31:40.090Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:31:40.090Z level=INFO msg="Processing batch" start=10 end=14 total_jobs=20
+time=2026-01-22T15:31:40.090Z level=INFO msg="Processing job" JobID=12ba8b58-735e-4ad8-a836-395bdc080c0d
+time=2026-01-22T15:31:40.090Z level=INFO msg="Processing job" JobID=85e73f36-39d8-49d6-a8dd-df28dea2e13e
+time=2026-01-22T15:31:40.090Z level=INFO msg="Processing job" JobID=eb233918-cdd3-4313-8fff-a594fd10778d
+time=2026-01-22T15:31:40.090Z level=INFO msg="Processing job" JobID=4f72eef0-f076-4463-b7e1-002728d8a882
+time=2026-01-22T15:31:40.090Z level=INFO msg="Processing job" JobID=e6cdb85f-e1fb-469d-acaf-89c2c8e63ad6
+time=2026-01-22T15:31:40.515Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:31:40.517Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:31:40.577Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:31:40.577Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:31:40.637Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:31:41.700Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/dubsmash-database-leaked-december-2018-free-download.3636/
+time=2026-01-22T15:31:41.713Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/dubsmash-database-leaked-december-2018-free-download.3636/
+time=2026-01-22T15:31:41.718Z level=INFO msg="Severity: " !BADKEY=0xc00046c060
+time=2026-01-22T15:31:41.924Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/common-wifi-hacking-attacks-techniques.3542/
+time=2026-01-22T15:31:41.939Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/common-wifi-hacking-attacks-techniques.3542/
+time=2026-01-22T15:31:41.945Z level=INFO msg="Severity: " !BADKEY=0xc00046c050
+time=2026-01-22T15:31:42.144Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-crack-any-software.3793/
+time=2026-01-22T15:31:42.157Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-crack-any-software.3793/
+time=2026-01-22T15:31:42.164Z level=INFO msg="Severity: " !BADKEY=0xc00046c028
+time=2026-01-22T15:31:42.175Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-osint-for-yourself-a-practical-start-and-free-resources.2606/
+time=2026-01-22T15:31:42.188Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-osint-for-yourself-a-practical-start-and-free-resources.2606/
+time=2026-01-22T15:31:42.195Z level=INFO msg="Severity: " !BADKEY=0xc00046c0d0
+time=2026-01-22T15:31:42.508Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/new-telegram-evil-dropper-vulnerability-cve-2025-1450-full-details-and-poc.3704/
+time=2026-01-22T15:31:42.525Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/new-telegram-evil-dropper-vulnerability-cve-2025-1450-full-details-and-poc.3704/
+time=2026-01-22T15:31:42.531Z level=INFO msg="Severity: " !BADKEY=0xc000586040
+time=2026-01-22T15:32:12.532Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:32:12.532Z level=INFO msg="Processing batch" start=15 end=19 total_jobs=20
+time=2026-01-22T15:32:12.532Z level=INFO msg="Processing job" JobID=7014603a-a824-443a-ad84-225176945110
+time=2026-01-22T15:32:12.532Z level=INFO msg="Processing job" JobID=c6f1d67d-c1f5-4a11-9414-aca63fcb1bc7
+time=2026-01-22T15:32:12.533Z level=INFO msg="Processing job" JobID=3f36f795-e441-4c39-8a58-364f65758873
+time=2026-01-22T15:32:12.533Z level=INFO msg="Processing job" JobID=e55d8fd8-f7c0-4591-b21e-cd9482df64e0
+time=2026-01-22T15:32:12.533Z level=INFO msg="Processing job" JobID=5e787206-c923-461e-8dc2-2a5365d7f05f
+time=2026-01-22T15:32:12.900Z level=ERROR msg="Failed to check Tor status: " error="Get \"https://check.torproject.org/api/ip\": EOF"
+time=2026-01-22T15:32:12.900Z level=ERROR msg="Job failed" id=5e787206-c923-461e-8dc2-2a5365d7f05f error="Get \"https://check.torproject.org/api/ip\": EOF" "Post URL"=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/practical-guide-to-protecting-apis-from-owasp-top-10-vulnerabilities-python-examples.2604/
+time=2026-01-22T15:32:13.024Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:32:13.084Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:32:13.160Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:32:13.191Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:32:14.086Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-hackers-access-whatsapp-web-session.3703/
+time=2026-01-22T15:32:14.100Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-hackers-access-whatsapp-web-session.3703/
+time=2026-01-22T15:32:14.104Z level=INFO msg="Severity: " !BADKEY=0xc00005e220
+time=2026-01-22T15:32:14.433Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/bypassing-next-generation-firewalls-with-fragtunnel.2626/
+time=2026-01-22T15:32:14.447Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/bypassing-next-generation-firewalls-with-fragtunnel.2626/
+time=2026-01-22T15:32:14.453Z level=INFO msg="Severity: " !BADKEY=0xc000312048
+time=2026-01-22T15:32:14.616Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/linux-basics-for-hackers-the-linux-logging-system.2645/
+time=2026-01-22T15:32:14.633Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/linux-basics-for-hackers-the-linux-logging-system.2645/
+time=2026-01-22T15:32:14.639Z level=INFO msg="Severity: " !BADKEY=0xc000312050
+time=2026-01-22T15:32:14.821Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hackus-mail-checker-3-11-free-update-leaked-2025-full-options.11765/
+time=2026-01-22T15:32:14.835Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hackus-mail-checker-3-11-free-update-leaked-2025-full-options.11765/
+time=2026-01-22T15:32:14.842Z level=INFO msg="Severity: " !BADKEY=0xc00005e078
+time=2026-01-22T15:32:44.856Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:32:44.856Z level=INFO msg="All posts are scanned"
+time=2026-01-22T15:34:08.507Z level=INFO msg="Processing batch" start=0 end=4 total_jobs=20
+time=2026-01-22T15:34:08.507Z level=INFO msg="Processing job" JobID=dba2324f-6323-45cf-9c82-b5bb28da48f6
+time=2026-01-22T15:34:08.507Z level=INFO msg="Processing job" JobID=0cea8b61-c541-4e68-afa4-a2d064664a47
+time=2026-01-22T15:34:08.507Z level=INFO msg="Processing job" JobID=c78840c1-66b1-4d57-8371-dfd99bd10668
+time=2026-01-22T15:34:08.507Z level=INFO msg="Processing job" JobID=eedb9bb7-dc61-46d7-ab8d-b4482e152c03
+time=2026-01-22T15:34:08.507Z level=INFO msg="Processing job" JobID=a0584014-18c4-41e2-b52f-3cc81fe25aab
+time=2026-01-22T15:34:08.826Z level=ERROR msg="Failed to check Tor status: " error="Get \"https://check.torproject.org/api/ip\": EOF"
+time=2026-01-22T15:34:08.826Z level=ERROR msg="Job failed" id=dba2324f-6323-45cf-9c82-b5bb28da48f6 error="Get \"https://check.torproject.org/api/ip\": EOF" "Post URL"=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/chainsaw-for-analize.1868/
+time=2026-01-22T15:34:08.950Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:34:08.964Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:34:08.995Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:34:09.064Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:34:11.448Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-hacking-2025-a-practical-guide.14163/
+time=2026-01-22T15:34:11.477Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-hacking-2025-a-practical-guide.14163/
+time=2026-01-22T15:34:11.484Z level=INFO msg="Severity: " !BADKEY=0xc00058a068
+time=2026-01-22T15:34:11.941Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/create-password-lists-dehash-passwords-easy-tutorial.11591/
+time=2026-01-22T15:34:11.979Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/create-password-lists-dehash-passwords-easy-tutorial.11591/
+time=2026-01-22T15:34:11.985Z level=INFO msg="Severity: " !BADKEY=0xc0002a6028
+time=2026-01-22T15:34:12.001Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/attack-with-webview2-applications.3718/
+time=2026-01-22T15:34:12.015Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/attack-with-webview2-applications.3718/
+time=2026-01-22T15:34:12.033Z level=INFO msg="Severity: " !BADKEY=0xc0002a6020
+time=2026-01-22T15:34:12.111Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/vpn-hacking-how-vpns-work-and-how-they-break-our-security.2417/
+time=2026-01-22T15:34:12.132Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/vpn-hacking-how-vpns-work-and-how-they-break-our-security.2417/
+time=2026-01-22T15:34:12.156Z level=INFO msg="Severity: " !BADKEY=0xc0005a4020
+time=2026-01-22T15:34:15.157Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:34:15.157Z level=INFO msg="Processing batch" start=5 end=9 total_jobs=20
+time=2026-01-22T15:34:15.157Z level=INFO msg="Processing job" JobID=7785f66c-086f-452c-9084-33328ae8750f
+time=2026-01-22T15:34:15.159Z level=INFO msg="Processing job" JobID=393f2dc7-a4d3-469e-a094-75246db849b4
+time=2026-01-22T15:34:15.159Z level=INFO msg="Processing job" JobID=f901c28a-bc70-4a85-b4c8-6d8061fcbc87
+time=2026-01-22T15:34:15.159Z level=INFO msg="Processing job" JobID=76bee9fb-6221-4d26-a9fc-ce66722ae5c4
+time=2026-01-22T15:34:15.158Z level=INFO msg="Processing job" JobID=4fe83201-fe10-4ab6-b024-d7818272e1fe
+time=2026-01-22T15:34:15.656Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:34:15.691Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:34:15.691Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:34:15.750Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:34:15.811Z level=INFO msg="Connected to Tor network" IP=45.66.35.29
+time=2026-01-22T15:34:17.028Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/molotov-tv-checker.11760/
+time=2026-01-22T15:34:17.043Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/molotov-tv-checker.11760/
+time=2026-01-22T15:34:17.048Z level=INFO msg="Severity: " !BADKEY=0xc0004b2068
+time=2026-01-22T15:34:17.219Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/introducing-a-youtube-parser.11318/
+time=2026-01-22T15:34:17.232Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/introducing-a-youtube-parser.11318/
+time=2026-01-22T15:34:17.250Z level=INFO msg="Severity: " !BADKEY=0xc000518008
+time=2026-01-22T15:34:17.636Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hacking-a-github-repository-with-github-dorks.3730/
+time=2026-01-22T15:34:17.651Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hacking-a-github-repository-with-github-dorks.3730/
+time=2026-01-22T15:34:17.676Z level=INFO msg="Severity: " !BADKEY=0xc000518028
+time=2026-01-22T15:34:18.023Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/ebpf-and-tetragon-a-revolution-in-linux-monitoring-and-security.1867/
+time=2026-01-22T15:34:18.041Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/ebpf-and-tetragon-a-revolution-in-linux-monitoring-and-security.1867/
+time=2026-01-22T15:34:18.046Z level=INFO msg="Severity: " !BADKEY=0xc0004b2048
+time=2026-01-22T15:34:18.080Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/automated-cve-scanning-with-cvescannerv2.2625/
+time=2026-01-22T15:34:18.093Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/automated-cve-scanning-with-cvescannerv2.2625/
+time=2026-01-22T15:34:18.114Z level=INFO msg="Severity: " !BADKEY=0xc0004b2010
+time=2026-01-22T15:34:21.114Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:34:21.115Z level=INFO msg="Processing batch" start=10 end=14 total_jobs=20
+time=2026-01-22T15:34:21.115Z level=INFO msg="Processing job" JobID=12ba8b58-735e-4ad8-a836-395bdc080c0d
+time=2026-01-22T15:34:21.115Z level=INFO msg="Processing job" JobID=85e73f36-39d8-49d6-a8dd-df28dea2e13e
+time=2026-01-22T15:34:21.115Z level=INFO msg="Processing job" JobID=4f72eef0-f076-4463-b7e1-002728d8a882
+time=2026-01-22T15:34:21.115Z level=INFO msg="Processing job" JobID=e6cdb85f-e1fb-469d-acaf-89c2c8e63ad6
+time=2026-01-22T15:34:21.116Z level=INFO msg="Processing job" JobID=eb233918-cdd3-4313-8fff-a594fd10778d
+time=2026-01-22T15:34:21.787Z level=INFO msg="Connected to Tor network" IP=185.100.87.250
+time=2026-01-22T15:34:21.831Z level=INFO msg="Connected to Tor network" IP=185.100.87.250
+time=2026-01-22T15:34:21.832Z level=INFO msg="Connected to Tor network" IP=185.100.87.250
+time=2026-01-22T15:34:21.847Z level=INFO msg="Connected to Tor network" IP=185.100.87.250
+time=2026-01-22T15:34:21.955Z level=INFO msg="Connected to Tor network" IP=185.100.87.250
+time=2026-01-22T15:34:23.024Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/new-telegram-evil-dropper-vulnerability-cve-2025-1450-full-details-and-poc.3704/
+time=2026-01-22T15:34:23.037Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/new-telegram-evil-dropper-vulnerability-cve-2025-1450-full-details-and-poc.3704/
+time=2026-01-22T15:34:23.059Z level=INFO msg="Severity: " !BADKEY=0xc00005e218
+time=2026-01-22T15:34:23.114Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/dubsmash-database-leaked-december-2018-free-download.3636/
+time=2026-01-22T15:34:23.128Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/dubsmash-database-leaked-december-2018-free-download.3636/
+time=2026-01-22T15:34:23.132Z level=INFO msg="Severity: " !BADKEY=0xc0004b2048
+time=2026-01-22T15:34:23.208Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-crack-any-software.3793/
+time=2026-01-22T15:34:23.222Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-crack-any-software.3793/
+time=2026-01-22T15:34:23.229Z level=INFO msg="Severity: " !BADKEY=0xc00005e138
+time=2026-01-22T15:34:23.321Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-osint-for-yourself-a-practical-start-and-free-resources.2606/
+time=2026-01-22T15:34:23.345Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-to-learn-osint-for-yourself-a-practical-start-and-free-resources.2606/
+time=2026-01-22T15:34:23.351Z level=INFO msg="Severity: " !BADKEY=0xc0002a6020
+time=2026-01-22T15:34:23.476Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/common-wifi-hacking-attacks-techniques.3542/
+time=2026-01-22T15:34:23.489Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/common-wifi-hacking-attacks-techniques.3542/
+time=2026-01-22T15:34:23.510Z level=INFO msg="Severity: " !BADKEY=0xc0004b2040
+time=2026-01-22T15:34:26.511Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:34:26.511Z level=INFO msg="Processing batch" start=15 end=19 total_jobs=20
+time=2026-01-22T15:34:26.511Z level=INFO msg="Processing job" JobID=5e787206-c923-461e-8dc2-2a5365d7f05f
+time=2026-01-22T15:34:26.511Z level=INFO msg="Processing job" JobID=3f36f795-e441-4c39-8a58-364f65758873
+time=2026-01-22T15:34:26.511Z level=INFO msg="Processing job" JobID=e55d8fd8-f7c0-4591-b21e-cd9482df64e0
+time=2026-01-22T15:34:26.511Z level=INFO msg="Processing job" JobID=c6f1d67d-c1f5-4a11-9414-aca63fcb1bc7
+time=2026-01-22T15:34:26.511Z level=INFO msg="Processing job" JobID=7014603a-a824-443a-ad84-225176945110
+time=2026-01-22T15:34:26.648Z level=INFO msg="Connected to Tor network" IP=185.100.87.250
+time=2026-01-22T15:34:26.870Z level=INFO msg="Connected to Tor network" IP=185.100.87.250
+time=2026-01-22T15:34:26.991Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:34:27.026Z level=INFO msg="Connected to Tor network" IP=185.100.87.250
+time=2026-01-22T15:34:27.129Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:34:27.719Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/practical-guide-to-protecting-apis-from-owasp-top-10-vulnerabilities-python-examples.2604/
+time=2026-01-22T15:34:27.773Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/practical-guide-to-protecting-apis-from-owasp-top-10-vulnerabilities-python-examples.2604/
+time=2026-01-22T15:34:27.793Z level=INFO msg="Severity: " !BADKEY=0xc0004b2020
+time=2026-01-22T15:34:28.170Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hackus-mail-checker-3-11-free-update-leaked-2025-full-options.11765/
+time=2026-01-22T15:34:28.345Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/hackus-mail-checker-3-11-free-update-leaked-2025-full-options.11765/
+time=2026-01-22T15:34:28.356Z level=INFO msg="Severity: " !BADKEY=0xc0004b2008
+time=2026-01-22T15:34:28.471Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/linux-basics-for-hackers-the-linux-logging-system.2645/
+time=2026-01-22T15:34:28.513Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-hackers-access-whatsapp-web-session.3703/
+time=2026-01-22T15:34:28.846Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/linux-basics-for-hackers-the-linux-logging-system.2645/
+time=2026-01-22T15:34:28.868Z level=INFO msg="Severity: " !BADKEY=0xc0004b2008
+time=2026-01-22T15:34:28.957Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/how-hackers-access-whatsapp-web-session.3703/
+time=2026-01-22T15:34:28.976Z level=INFO msg="Severity: " !BADKEY=0xc00069e018
+time=2026-01-22T15:34:29.116Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/bypassing-next-generation-firewalls-with-fragtunnel.2626/
+time=2026-01-22T15:34:29.475Z level=INFO msg="Successfully updated the last scan" URL=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/threads/bypassing-next-generation-firewalls-with-fragtunnel.2626/
+time=2026-01-22T15:34:29.494Z level=INFO msg="Severity: " !BADKEY=0xc0004b2020
+time=2026-01-22T15:34:32.495Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:34:32.495Z level=INFO msg="All posts are scanned"
+time=2026-01-22T15:36:54.744Z level=INFO msg="Successfully added forum" name=Forum1
+time=2026-01-22T15:36:58.979Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:27.746Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/forums/hacking-cracking-tools-apps.21
+time=2026-01-22T15:37:27.758Z level=INFO msg="Successfully updated the last scan" name=Forum1
+time=2026-01-22T15:37:27.758Z level=INFO msg="Successfully scraped forum" name=Forum1
+time=2026-01-22T15:37:47.724Z level=INFO msg="Processing batch" start=0 end=4 total_jobs=103
+time=2026-01-22T15:37:47.724Z level=INFO msg="Processing job" JobID=e8ca97e6-d270-4c1d-b06f-0fe27cfff1b1
+time=2026-01-22T15:37:47.724Z level=INFO msg="Processing job" JobID=9784c699-447f-4810-b345-b49e59b8fd87
+time=2026-01-22T15:37:47.724Z level=INFO msg="Processing job" JobID=2f8835b3-6d64-4576-a56c-76eed5e7b75e
+time=2026-01-22T15:37:47.724Z level=INFO msg="Processing job" JobID=d0d2aef4-b54e-4656-a78f-0e5db2c45ccd
+time=2026-01-22T15:37:47.724Z level=INFO msg="Processing job" JobID=289f5929-4837-431d-9889-311187fe0699
+time=2026-01-22T15:37:48.091Z level=ERROR msg="Failed to check Tor status: " error="Get \"https://check.torproject.org/api/ip\": EOF"
+time=2026-01-22T15:37:48.091Z level=ERROR msg="Job failed" id=289f5929-4837-431d-9889-311187fe0699 error="Get \"https://check.torproject.org/api/ip\": EOF" "Post URL"=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/instagram-bot-auto-follows-auto-like-ninjagram-latest-version-7-5-8-9.287/
+time=2026-01-22T15:37:48.206Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:48.237Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:48.311Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:48.311Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:49.861Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9A%A0%EF%B8%8Fcaution-high-risk-section.2086/
+time=2026-01-22T15:37:49.879Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9A%A0%EF%B8%8Fcaution-high-risk-section.2086/
+time=2026-01-22T15:37:49.896Z level=INFO msg="Severity: " !BADKEY=0xc00005e4f8
+time=2026-01-22T15:37:50.092Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/ultra-malware-rats-and-spyware-references-%E2%9C%A8.51516/
+time=2026-01-22T15:37:50.110Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/ultra-malware-rats-and-spyware-references-%E2%9C%A8.51516/
+time=2026-01-22T15:37:50.137Z level=INFO msg="Severity: " !BADKEY=0xc0005a4008
+time=2026-01-22T15:37:50.172Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/whatsapp-hacking-source-code.18073/
+time=2026-01-22T15:37:50.188Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/whatsapp-hacking-source-code.18073/
+time=2026-01-22T15:37:50.279Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/wifi-cracker-crack-hack-any-wifi-source-code.14757/
+time=2026-01-22T15:37:50.314Z level=INFO msg="Severity: " !BADKEY=0xc0002a6008
+time=2026-01-22T15:37:50.354Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/wifi-cracker-crack-hack-any-wifi-source-code.14757/
+time=2026-01-22T15:37:50.365Z level=INFO msg="Severity: " !BADKEY=0xc0005a4018
+time=2026-01-22T15:37:53.378Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:37:53.378Z level=INFO msg="Processing batch" start=5 end=9 total_jobs=103
+time=2026-01-22T15:37:53.378Z level=INFO msg="Processing job" JobID=fb671ee8-c33a-4917-96d0-aadf3311b96d
+time=2026-01-22T15:37:53.378Z level=INFO msg="Processing job" JobID=2bf9be81-16b1-4e3d-9722-4ba4f5a2897b
+time=2026-01-22T15:37:53.378Z level=INFO msg="Processing job" JobID=e34e10bd-efe3-4b52-bebb-60024a27e193
+time=2026-01-22T15:37:53.378Z level=INFO msg="Processing job" JobID=bc4d3b95-95a1-4d27-a7ea-364713733828
+time=2026-01-22T15:37:53.378Z level=INFO msg="Processing job" JobID=ea7fa84b-786c-4672-8117-98cb77b6fa75
+time=2026-01-22T15:37:53.883Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:53.883Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:53.883Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:53.943Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:53.944Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:54.861Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90-hacking-tools-you-should-know-in-2026-%E2%AD%90.79900/
+time=2026-01-22T15:37:54.876Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90-hacking-tools-you-should-know-in-2026-%E2%AD%90.79900/
+time=2026-01-22T15:37:54.902Z level=INFO msg="Severity: " !BADKEY=0xc0002a6038
+time=2026-01-22T15:37:55.268Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/hack-cctv.27085/
+time=2026-01-22T15:37:55.282Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/hack-cctv.27085/
+time=2026-01-22T15:37:55.297Z level=INFO msg="Severity: " !BADKEY=0xc00038e030
+time=2026-01-22T15:37:55.550Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/java-minecraft-microsoft-account-checker-source.3952/
+time=2026-01-22T15:37:55.571Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/java-minecraft-microsoft-account-checker-source.3952/
+time=2026-01-22T15:37:55.590Z level=INFO msg="Severity: " !BADKEY=0xc00038e018
+time=2026-01-22T15:37:56.076Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5-whatsapp-hack-very-simple-method.63711/
+time=2026-01-22T15:37:56.096Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5-whatsapp-hack-very-simple-method.63711/
+time=2026-01-22T15:37:56.111Z level=INFO msg="Severity: " !BADKEY=0xc00038e018
+time=2026-01-22T15:37:56.257Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/hack-cctv-camera-opensource-tool.32145/
+time=2026-01-22T15:37:56.274Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/hack-cctv-camera-opensource-tool.32145/
+time=2026-01-22T15:37:56.297Z level=INFO msg="Severity: " !BADKEY=0xc00038e010
+time=2026-01-22T15:37:59.312Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:37:59.312Z level=INFO msg="Processing batch" start=10 end=14 total_jobs=103
+time=2026-01-22T15:37:59.312Z level=INFO msg="Processing job" JobID=89c87c84-e4cf-4305-88ec-6426ca1bd6f8
+time=2026-01-22T15:37:59.312Z level=INFO msg="Processing job" JobID=16820adb-21e0-46a4-be09-2eed1dfcbb1c
+time=2026-01-22T15:37:59.312Z level=INFO msg="Processing job" JobID=9af02974-d0be-42c2-970c-267e7cded0c8
+time=2026-01-22T15:37:59.313Z level=INFO msg="Processing job" JobID=46b66745-a5de-4d20-975e-6fd857bd4d61
+time=2026-01-22T15:37:59.313Z level=INFO msg="Processing job" JobID=7c3b27ca-91d3-4e59-b69f-0757f78ee956
+time=2026-01-22T15:37:59.883Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:59.942Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:59.943Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:37:59.943Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:00.002Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:01.704Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/quasar-rat-reverse-proxy-remote-desktop-remote-shell-password-recovery.52206/
+time=2026-01-22T15:38:01.718Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/quasar-rat-reverse-proxy-remote-desktop-remote-shell-password-recovery.52206/
+time=2026-01-22T15:38:01.735Z level=INFO msg="Severity: " !BADKEY=0xc0004b2018
+time=2026-01-22T15:38:01.816Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5%F0%9F%94%A5-top-telegram-channels-for-free-netflix-spotify-disney-crunchyroll-accounts.35491/
+time=2026-01-22T15:38:01.831Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5%F0%9F%94%A5-top-telegram-channels-for-free-netflix-spotify-disney-crunchyroll-accounts.35491/
+time=2026-01-22T15:38:01.856Z level=INFO msg="Severity: " !BADKEY=0xc0004b2010
+time=2026-01-22T15:38:01.938Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/exclusive-%E2%AD%90%EF%B8%8Fsms-bomber-and-call-bomber-on-phone%E2%AD%90%EF%B8%8Fnoob-friendly%E2%AD%90%EF%B8%8F.52273/
+time=2026-01-22T15:38:01.941Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/rdp-cracking-tools-tutorials-%E2%9C%85%EF%B8%8F-hq-method%E2%9C%85%EF%B8%8F-leaked.61193/
+time=2026-01-22T15:38:01.956Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/exclusive-%E2%AD%90%EF%B8%8Fsms-bomber-and-call-bomber-on-phone%E2%AD%90%EF%B8%8Fnoob-friendly%E2%AD%90%EF%B8%8F.52273/
+time=2026-01-22T15:38:01.973Z level=INFO msg="Severity: " !BADKEY=0xc00005e298
+time=2026-01-22T15:38:01.975Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/rdp-cracking-tools-tutorials-%E2%9C%85%EF%B8%8F-hq-method%E2%9C%85%EF%B8%8F-leaked.61193/
+time=2026-01-22T15:38:01.986Z level=INFO msg="Severity: " !BADKEY=0xc0005a4018
+time=2026-01-22T15:38:02.068Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%98%A2%EF%B8%8F%E2%AD%90-5-gb-600-tools-of-cracked-tools-%E2%AD%90%E2%98%A3%EF%B8%8F-new-2024%E2%9C%85.20340/
+time=2026-01-22T15:38:02.084Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%98%A2%EF%B8%8F%E2%AD%90-5-gb-600-tools-of-cracked-tools-%E2%AD%90%E2%98%A3%EF%B8%8F-new-2024%E2%9C%85.20340/
+time=2026-01-22T15:38:02.102Z level=INFO msg="Severity: " !BADKEY=0xc00005e298
+time=2026-01-22T15:38:05.115Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:38:05.115Z level=INFO msg="Processing batch" start=15 end=19 total_jobs=103
+time=2026-01-22T15:38:05.115Z level=INFO msg="Processing job" JobID=67bd4f99-1a01-4c21-a6cb-7e71969a5c09
+time=2026-01-22T15:38:05.115Z level=INFO msg="Processing job" JobID=604e7bd0-a963-4846-92e3-d1d76c1ee619
+time=2026-01-22T15:38:05.115Z level=INFO msg="Processing job" JobID=100066f9-b89d-4715-9071-6bf92c219e63
+time=2026-01-22T15:38:05.116Z level=INFO msg="Processing job" JobID=5b035c64-bc86-4184-ae80-1ff485050d7b
+time=2026-01-22T15:38:05.116Z level=INFO msg="Processing job" JobID=ad4f052f-8118-44c3-8072-eca8408a9a52
+time=2026-01-22T15:38:05.516Z level=ERROR msg="Failed to check Tor status: " error="Get \"https://check.torproject.org/api/ip\": EOF"
+time=2026-01-22T15:38:05.516Z level=ERROR msg="Job failed" id=ad4f052f-8118-44c3-8072-eca8408a9a52 error="Get \"https://check.torproject.org/api/ip\": EOF" "Post URL"=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/premium-vpn-seed4-me-vpn-free-for-1-year.59893/
+time=2026-01-22T15:38:05.567Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:05.575Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:05.576Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:05.680Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:07.366Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/giftcard-generator-checker-any-website.15090/
+time=2026-01-22T15:38:07.379Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-sms-bomber-working.63734/
+time=2026-01-22T15:38:07.380Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/giftcard-generator-checker-any-website.15090/
+time=2026-01-22T15:38:07.389Z level=INFO msg="Severity: " !BADKEY=0xc0004b2020
+time=2026-01-22T15:38:07.397Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-sms-bomber-working.63734/
+time=2026-01-22T15:38:07.436Z level=INFO msg="Severity: " !BADKEY=0xc0004b2008
+time=2026-01-22T15:38:07.498Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5-430x-live-mixed-cards-with-%F0%9F%94%90cvv-godphanes-%E2%9C%85-free.38247/
+time=2026-01-22T15:38:07.514Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5-430x-live-mixed-cards-with-%F0%9F%94%90cvv-godphanes-%E2%9C%85-free.38247/
+time=2026-01-22T15:38:07.569Z level=INFO msg="Severity: " !BADKEY=0xc0005a4018
+time=2026-01-22T15:38:07.575Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/pegasus-rat-4-2-leaked-cracked-%E2%98%A0%EF%B8%8F-by-droneagent.45621/
+time=2026-01-22T15:38:07.610Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/pegasus-rat-4-2-leaked-cracked-%E2%98%A0%EF%B8%8F-by-droneagent.45621/
+time=2026-01-22T15:38:07.622Z level=INFO msg="Severity: " !BADKEY=0xc0004b2020
+time=2026-01-22T15:38:10.639Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:38:10.639Z level=INFO msg="Processing batch" start=20 end=24 total_jobs=103
+time=2026-01-22T15:38:10.639Z level=INFO msg="Processing job" JobID=165d6992-8641-4062-9c9a-eac8dec5e5ad
+time=2026-01-22T15:38:10.639Z level=INFO msg="Processing job" JobID=204e39a4-8bb3-45e3-8fef-aca09f8033ba
+time=2026-01-22T15:38:10.639Z level=INFO msg="Processing job" JobID=760ac4b5-e5cd-4210-a88c-e8b24fecdb9d
+time=2026-01-22T15:38:10.639Z level=INFO msg="Processing job" JobID=f225676d-498a-4ed3-b1cd-e07e5033e3c5
+time=2026-01-22T15:38:10.639Z level=INFO msg="Processing job" JobID=5d3a9a40-4601-4163-89c2-e0b096b85186
+time=2026-01-22T15:38:11.398Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:11.398Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:11.447Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:11.447Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:11.513Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:12.510Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/phone-number-osint_-tools-techniques.57349/
+time=2026-01-22T15:38:12.523Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/phone-number-osint_-tools-techniques.57349/
+time=2026-01-22T15:38:12.531Z level=INFO msg="Severity: " !BADKEY=0xc00005e298
+time=2026-01-22T15:38:13.019Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/doxing-anybody-get-phone-number-with-just-an-instagram-username.263/
+time=2026-01-22T15:38:13.033Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/doxing-anybody-get-phone-number-with-just-an-instagram-username.263/
+time=2026-01-22T15:38:13.045Z level=INFO msg="Severity: " !BADKEY=0xc0005a4010
+time=2026-01-22T15:38:13.274Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%A6%89craxsrat-7-4-full-source-code.26227/
+time=2026-01-22T15:38:13.289Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%A6%89craxsrat-7-4-full-source-code.26227/
+time=2026-01-22T15:38:13.310Z level=INFO msg="Severity: " !BADKEY=0xc00005e078
+time=2026-01-22T15:38:13.620Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%A8-trace-phone-number-name-ip-etc-%E2%9C%A8.55813/
+time=2026-01-22T15:38:13.633Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%A8-trace-phone-number-name-ip-etc-%E2%9C%A8.55813/
+time=2026-01-22T15:38:13.639Z level=INFO msg="Severity: " !BADKEY=0xc0005a4010
+time=2026-01-22T15:38:13.785Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-500-tb-databases-search-bot-number-search-and-telegram.28289/
+time=2026-01-22T15:38:13.798Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-500-tb-databases-search-bot-number-search-and-telegram.28289/
+time=2026-01-22T15:38:13.806Z level=INFO msg="Severity: " !BADKEY=0xc00005e2b0
+time=2026-01-22T15:38:16.819Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:38:16.819Z level=INFO msg="Processing batch" start=25 end=29 total_jobs=103
+time=2026-01-22T15:38:16.819Z level=INFO msg="Processing job" JobID=c2fc5750-8a6f-4b81-9eb7-e5f1c0a5bf03
+time=2026-01-22T15:38:16.820Z level=INFO msg="Processing job" JobID=90d269b4-68f9-485e-ab2a-0e9e37a928eb
+time=2026-01-22T15:38:16.820Z level=INFO msg="Processing job" JobID=0d6534f9-88fb-40c1-b67d-013ce73eac3a
+time=2026-01-22T15:38:16.820Z level=INFO msg="Processing job" JobID=25498299-32fd-4aa6-92d9-d2ef66e9943d
+time=2026-01-22T15:38:16.821Z level=INFO msg="Processing job" JobID=fa7f2a12-59ad-4465-9269-49d1b7a75a21
+time=2026-01-22T15:38:16.927Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:17.063Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:17.240Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:17.308Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:17.376Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:18.197Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/g-700-banking-android-rat-download-full-activated.36683/
+time=2026-01-22T15:38:18.214Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/g-700-banking-android-rat-download-full-activated.36683/
+time=2026-01-22T15:38:18.238Z level=INFO msg="Severity: " !BADKEY=0xc0002a6030
+time=2026-01-22T15:38:19.036Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9A%A1%EF%B8%8F-otp-bot-github-opensource-best-free-otp-bot%E2%9A%A1%EF%B8%8F.3961/
+time=2026-01-22T15:38:19.049Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9A%A1%EF%B8%8F-otp-bot-github-opensource-best-free-otp-bot%E2%9A%A1%EF%B8%8F.3961/
+time=2026-01-22T15:38:19.059Z level=INFO msg="Severity: " !BADKEY=0xc0005a4028
+time=2026-01-22T15:38:19.176Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/mr-robot-hacking-tools-pack.52182/
+time=2026-01-22T15:38:19.490Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%85%EF%B8%8F%E2%AD%90-tools-for-cracking-wifi-networks-%E2%9C%B4%EF%B8%8F.54055/
+time=2026-01-22T15:38:19.771Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/mr-robot-hacking-tools-pack.52182/
+time=2026-01-22T15:38:19.785Z level=INFO msg="Severity: " !BADKEY=0xc0002a6030
+time=2026-01-22T15:38:19.806Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9D%84%EF%B8%8Fweb-pentesting-%E2%9A%9C%EF%B8%8F-bugbounty-tools-list%E2%9D%84%EF%B8%8F.53657/
+time=2026-01-22T15:38:19.821Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9D%84%EF%B8%8Fweb-pentesting-%E2%9A%9C%EF%B8%8F-bugbounty-tools-list%E2%9D%84%EF%B8%8F.53657/
+time=2026-01-22T15:38:19.831Z level=INFO msg="Severity: " !BADKEY=0xc0002a6018
+time=2026-01-22T15:38:19.943Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%85%EF%B8%8F%E2%AD%90-tools-for-cracking-wifi-networks-%E2%9C%B4%EF%B8%8F.54055/
+time=2026-01-22T15:38:19.963Z level=INFO msg="Severity: " !BADKEY=0xc0002a6010
+time=2026-01-22T15:38:22.981Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:38:22.981Z level=INFO msg="Processing batch" start=30 end=34 total_jobs=103
+time=2026-01-22T15:38:22.981Z level=INFO msg="Processing job" JobID=2fc35bd4-4c7b-4549-99fa-3d0cf399bf6a
+time=2026-01-22T15:38:22.981Z level=INFO msg="Processing job" JobID=37449fb3-21ba-4eb0-b89a-517d340404a9
+time=2026-01-22T15:38:22.981Z level=INFO msg="Processing job" JobID=502935c6-be18-4034-bb02-40b7aab9c651
+time=2026-01-22T15:38:22.981Z level=INFO msg="Processing job" JobID=95ac798b-a299-4137-82e8-bd5dec18a016
+time=2026-01-22T15:38:22.981Z level=INFO msg="Processing job" JobID=dd172cf0-9ae0-427f-8b5d-4b5b522f546e
+time=2026-01-22T15:38:23.363Z level=ERROR msg="Failed to check Tor status: " error="Get \"https://check.torproject.org/api/ip\": EOF"
+time=2026-01-22T15:38:23.363Z level=ERROR msg="Job failed" id=2fc35bd4-4c7b-4549-99fa-3d0cf399bf6a error="Get \"https://check.torproject.org/api/ip\": EOF" "Post URL"=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/instagram-mega-hack-pack-with-lots-of-insta-hack-tutorials.8762/
+time=2026-01-22T15:38:23.473Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:23.540Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:23.540Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:23.676Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:24.454Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/pegasus-wms-spyware-wms-v5-11.79660/
+time=2026-01-22T15:38:24.489Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/pegasus-wms-spyware-wms-v5-11.79660/
+time=2026-01-22T15:38:24.532Z level=INFO msg="Severity: " !BADKEY=0xc0005a4010
+time=2026-01-22T15:38:25.178Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/undetectable-malware-with-c.51313/
+time=2026-01-22T15:38:25.209Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/undetectable-malware-with-c.51313/
+time=2026-01-22T15:38:25.231Z level=INFO msg="Severity: " !BADKEY=0xc00038e038
+time=2026-01-22T15:38:25.755Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/facebook-hacking-python-script.14530/
+time=2026-01-22T15:38:25.867Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90onlyfans-leaks-by-actor-name.33401/
+time=2026-01-22T15:38:26.328Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/facebook-hacking-python-script.14530/
+time=2026-01-22T15:38:26.335Z level=INFO msg="Severity: " !BADKEY=0xc0005ae008
+time=2026-01-22T15:38:26.447Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90onlyfans-leaks-by-actor-name.33401/
+time=2026-01-22T15:38:26.454Z level=INFO msg="Severity: " !BADKEY=0xc00038e010
+time=2026-01-22T15:38:29.469Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:38:29.469Z level=INFO msg="Processing batch" start=35 end=39 total_jobs=103
+time=2026-01-22T15:38:29.469Z level=INFO msg="Processing job" JobID=17994abc-b16c-43ea-abbc-7c64a60c845b
+time=2026-01-22T15:38:29.469Z level=INFO msg="Processing job" JobID=f6c29ae9-aa45-4adf-a28b-692d5eefeb1d
+time=2026-01-22T15:38:29.469Z level=INFO msg="Processing job" JobID=0550d7a5-5927-4e3d-b4b1-f63bd190cbe0
+time=2026-01-22T15:38:29.469Z level=INFO msg="Processing job" JobID=289c1aa6-65d7-4ec0-849a-d9dc61310423
+time=2026-01-22T15:38:29.469Z level=INFO msg="Processing job" JobID=9aaa3353-49c4-49f4-b64e-ba4d2ddc1487
+time=2026-01-22T15:38:29.967Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:29.979Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:29.984Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:30.019Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:30.052Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:32.121Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-doxing-bot.27285/
+time=2026-01-22T15:38:32.136Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-doxing-bot.27285/
+time=2026-01-22T15:38:32.143Z level=INFO msg="Severity: " !BADKEY=0xc00005e320
+time=2026-01-22T15:38:32.316Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/paysafecard-code-generator-%E2%9C%85-money-generator-%E2%9C%85-check-codes-yourself-open-source-%E2%9C%85-tested-%E2%9C%85.1011/
+time=2026-01-22T15:38:32.587Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/discord-raiding-tool-vhq.51579/
+time=2026-01-22T15:38:32.744Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/paysafecard-code-generator-%E2%9C%85-money-generator-%E2%9C%85-check-codes-yourself-open-source-%E2%9C%85-tested-%E2%9C%85.1011/
+time=2026-01-22T15:38:32.756Z level=INFO msg="Severity: " !BADKEY=0xc0005a4008
+time=2026-01-22T15:38:32.830Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/discord-raiding-tool-vhq.51579/
+time=2026-01-22T15:38:32.846Z level=INFO msg="Severity: " !BADKEY=0xc0005a4118
+time=2026-01-22T15:38:32.885Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/finalrecon%E2%AD%90v1-0-2-osint-tool-for-all-in-one-web-reconnaissance-bug-bounty-%E2%AD%90.52009/
+time=2026-01-22T15:38:32.899Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/finalrecon%E2%AD%90v1-0-2-osint-tool-for-all-in-one-web-reconnaissance-bug-bounty-%E2%AD%90.52009/
+time=2026-01-22T15:38:32.904Z level=INFO msg="Severity: " !BADKEY=0xc0005a4030
+time=2026-01-22T15:38:32.991Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%98%84%EF%B8%8Fdiscord-raid%E2%98%84%EF%B8%8F-raid-tool%E2%98%84%EF%B8%8F-flood-any-server%E2%98%84%EF%B8%8F-spam-any-server%E2%98%84%EF%B8%8Ffree-and-working%E2%98%84%EF%B8%8F.51982/
+time=2026-01-22T15:38:33.005Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%98%84%EF%B8%8Fdiscord-raid%E2%98%84%EF%B8%8F-raid-tool%E2%98%84%EF%B8%8F-flood-any-server%E2%98%84%EF%B8%8F-spam-any-server%E2%98%84%EF%B8%8Ffree-and-working%E2%98%84%EF%B8%8F.51982/
+time=2026-01-22T15:38:33.010Z level=INFO msg="Severity: " !BADKEY=0xc00005e3e0
+time=2026-01-22T15:38:36.021Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:38:36.021Z level=INFO msg="Processing batch" start=40 end=44 total_jobs=103
+time=2026-01-22T15:38:36.022Z level=INFO msg="Processing job" JobID=6d222b4d-e6b5-4a4a-b731-ce21c8d4c9eb
+time=2026-01-22T15:38:36.022Z level=INFO msg="Processing job" JobID=8bd09ab6-0201-4020-8431-229904d95964
+time=2026-01-22T15:38:36.022Z level=INFO msg="Processing job" JobID=a7938ceb-e2b8-4412-ae40-9ac4a34e4372
+time=2026-01-22T15:38:36.022Z level=INFO msg="Processing job" JobID=49caa7ae-1321-491e-acbc-b37b845489fa
+time=2026-01-22T15:38:36.022Z level=INFO msg="Processing job" JobID=3ddd69f1-9ac5-4963-9f0b-eb7476b2bf20
+time=2026-01-22T15:38:36.484Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:36.553Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:36.598Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:36.598Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:36.676Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:38.044Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/all-you-need-for-doxing-quit-overcomplicating-shit-free.51737/
+time=2026-01-22T15:38:38.063Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/all-you-need-for-doxing-quit-overcomplicating-shit-free.51737/
+time=2026-01-22T15:38:38.070Z level=INFO msg="Severity: " !BADKEY=0xc0004b2020
+time=2026-01-22T15:38:38.354Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/far-cry-1-full-source.55469/
+time=2026-01-22T15:38:38.368Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/far-cry-1-full-source.55469/
+time=2026-01-22T15:38:38.371Z level=INFO msg="Severity: " !BADKEY=0xc0004b2010
+time=2026-01-22T15:38:38.533Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5%F0%9F%94%A5600-best-craking-and-hack-tool-for-free%F0%9F%94%A5%F0%9F%94%A5.26739/
+time=2026-01-22T15:38:38.548Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5%F0%9F%94%A5600-best-craking-and-hack-tool-for-free%F0%9F%94%A5%F0%9F%94%A5.26739/
+time=2026-01-22T15:38:38.557Z level=INFO msg="Severity: " !BADKEY=0xc0005a4028
+time=2026-01-22T15:38:38.931Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/888-rat-1-0-9-clean-crack.276/
+time=2026-01-22T15:38:38.946Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/888-rat-1-0-9-clean-crack.276/
+time=2026-01-22T15:38:38.973Z level=INFO msg="Severity: " !BADKEY=0xc0005a4010
+time=2026-01-22T15:38:39.307Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-doxing-bot-telegram-free-databases-50-tb.27296/
+time=2026-01-22T15:38:39.730Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-doxing-bot-telegram-free-databases-50-tb.27296/
+time=2026-01-22T15:38:39.739Z level=INFO msg="Severity: " !BADKEY=0xc0005a4010
+time=2026-01-22T15:38:42.751Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:38:42.751Z level=INFO msg="Processing batch" start=45 end=49 total_jobs=103
+time=2026-01-22T15:38:42.751Z level=INFO msg="Processing job" JobID=0880e319-8a6f-4662-b6e1-23903ea881d7
+time=2026-01-22T15:38:42.751Z level=INFO msg="Processing job" JobID=b28ea7f4-4c15-46ea-9a20-c307501016c0
+time=2026-01-22T15:38:42.751Z level=INFO msg="Processing job" JobID=05e09cf4-370a-42de-9f0c-95f6cc76b07d
+time=2026-01-22T15:38:42.751Z level=INFO msg="Processing job" JobID=5f482d56-b20c-40f6-a758-7f86515ce026
+time=2026-01-22T15:38:42.751Z level=INFO msg="Processing job" JobID=6568b588-1feb-4dd5-9d49-cb4bfd941036
+time=2026-01-22T15:38:42.873Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:43.010Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:43.202Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:43.260Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:43.270Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:44.678Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/rat-%E2%AD%90-pegasus-%F0%9F%91%8C-lime-hvnc-%E2%98%A0%EF%B8%8F.29895/
+time=2026-01-22T15:38:44.695Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/rat-%E2%AD%90-pegasus-%F0%9F%91%8C-lime-hvnc-%E2%98%A0%EF%B8%8F.29895/
+time=2026-01-22T15:38:44.703Z level=INFO msg="Severity: " !BADKEY=0xc00038e018
+time=2026-01-22T15:38:44.824Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/source-code-instagram-mass-account-creator-%E2%AD%90-hq.55708/
+time=2026-01-22T15:38:44.837Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/source-code-instagram-mass-account-creator-%E2%AD%90-hq.55708/
+time=2026-01-22T15:38:44.843Z level=INFO msg="Severity: " !BADKEY=0xc00038e130
+time=2026-01-22T15:38:44.979Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-sms-bomber-working.296/
+time=2026-01-22T15:38:44.996Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-sms-bomber-working.296/
+time=2026-01-22T15:38:45.038Z level=INFO msg="Severity: " !BADKEY=0xc0005ae018
+time=2026-01-22T15:38:45.043Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5-instagram-livestream-banning-%F0%9F%94%A5.63269/
+time=2026-01-22T15:38:45.076Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5-instagram-livestream-banning-%F0%9F%94%A5.63269/
+time=2026-01-22T15:38:45.084Z level=INFO msg="Severity: " !BADKEY=0xc0005ae048
+time=2026-01-22T15:38:45.184Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%A7%A8-tools-%F0%9F%9A%80-website-%F0%9F%91%BB-for-crackers-%E2%98%A0%EF%B8%8F.29957/
+time=2026-01-22T15:38:45.197Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%A7%A8-tools-%F0%9F%9A%80-website-%F0%9F%91%BB-for-crackers-%E2%98%A0%EF%B8%8F.29957/
+time=2026-01-22T15:38:45.205Z level=INFO msg="Severity: " !BADKEY=0xc00038e010
+time=2026-01-22T15:38:48.217Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:38:48.217Z level=INFO msg="Processing batch" start=50 end=54 total_jobs=103
+time=2026-01-22T15:38:48.217Z level=INFO msg="Processing job" JobID=4c552d93-ca46-4bb2-930f-8cb81a508dd2
+time=2026-01-22T15:38:48.217Z level=INFO msg="Processing job" JobID=11e4e318-8be0-4ba6-90e7-afe150fd1008
+time=2026-01-22T15:38:48.217Z level=INFO msg="Processing job" JobID=2ba92081-5181-401f-a4b6-a682e6112d1b
+time=2026-01-22T15:38:48.217Z level=INFO msg="Processing job" JobID=b8cc466d-1629-4e30-aaa7-d21f5a217dfc
+time=2026-01-22T15:38:48.217Z level=INFO msg="Processing job" JobID=52829bc2-a8e4-486c-a237-cf53a7b98887
+time=2026-01-22T15:38:48.329Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:48.468Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:48.673Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:48.765Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:48.800Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:49.928Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/eaglespy-v5-lifetime-activated-latest-android-rat.36346/
+time=2026-01-22T15:38:49.944Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/eaglespy-v5-lifetime-activated-latest-android-rat.36346/
+time=2026-01-22T15:38:49.974Z level=INFO msg="Severity: " !BADKEY=0xc00005e2b0
+time=2026-01-22T15:38:50.363Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/giftcard-promo-code-voucher-code-generator-checker-any-site.1059/
+time=2026-01-22T15:38:50.377Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/giftcard-promo-code-voucher-code-generator-checker-any-site.1059/
+time=2026-01-22T15:38:50.385Z level=INFO msg="Severity: " !BADKEY=0xc00005e2b0
+time=2026-01-22T15:38:50.734Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/amazon-giftcard-checker-proxyless-still-working-new-02-08.19328/
+time=2026-01-22T15:38:50.748Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/amazon-giftcard-checker-proxyless-still-working-new-02-08.19328/
+time=2026-01-22T15:38:50.756Z level=INFO msg="Severity: " !BADKEY=0xc00005e2b0
+time=2026-01-22T15:38:50.774Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90-easy-hack-into-random-peoples-cameras-in-minutes-%F0%9F%9A%80-%E2%AD%90%F0%9F%92%A3.29902/
+time=2026-01-22T15:38:50.787Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90-easy-hack-into-random-peoples-cameras-in-minutes-%F0%9F%9A%80-%E2%AD%90%F0%9F%92%A3.29902/
+time=2026-01-22T15:38:50.795Z level=INFO msg="Severity: " !BADKEY=0xc00005e298
+time=2026-01-22T15:38:50.932Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/sql-injection-dorker-checker-scrapes-vuln-websites-from-multiple-search-engines-and-checks-them.19338/
+time=2026-01-22T15:38:50.947Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/sql-injection-dorker-checker-scrapes-vuln-websites-from-multiple-search-engines-and-checks-them.19338/
+time=2026-01-22T15:38:50.970Z level=INFO msg="Severity: " !BADKEY=0xc00038e010
+time=2026-01-22T15:38:53.982Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:38:53.982Z level=INFO msg="Processing batch" start=55 end=59 total_jobs=103
+time=2026-01-22T15:38:53.982Z level=INFO msg="Processing job" JobID=841bec2c-f420-4f7f-b958-13daf4a1edab
+time=2026-01-22T15:38:53.982Z level=INFO msg="Processing job" JobID=3ca95dd5-73b7-4d38-9efc-fb526076524e
+time=2026-01-22T15:38:53.983Z level=INFO msg="Processing job" JobID=62d1f81d-5e89-48e2-a6d4-fdadf5202616
+time=2026-01-22T15:38:53.983Z level=INFO msg="Processing job" JobID=6882e447-77e8-4509-8de5-ec519d421eb5
+time=2026-01-22T15:38:53.983Z level=INFO msg="Processing job" JobID=df1b88ae-f571-47f2-9029-c45d0d99dff8
+time=2026-01-22T15:38:54.092Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:54.228Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:54.407Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:54.524Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:54.524Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:38:55.545Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/rchecker-best-free-riotgames-checker-lol-val-modules-full-capture.14992/
+time=2026-01-22T15:38:55.558Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/rchecker-best-free-riotgames-checker-lol-val-modules-full-capture.14992/
+time=2026-01-22T15:38:55.561Z level=INFO msg="Severity: " !BADKEY=0xc0005a4018
+time=2026-01-22T15:38:56.639Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-silent-eth-etc-xmr-miner-50-day.275/
+time=2026-01-22T15:38:56.657Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-silent-eth-etc-xmr-miner-50-day.275/
+time=2026-01-22T15:38:56.667Z level=INFO msg="Severity: " !BADKEY=0xc0005a4008
+time=2026-01-22T15:38:56.796Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-tiktok-view-bot-over-5k-in-20-mins.19401/
+time=2026-01-22T15:38:56.809Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-tiktok-view-bot-over-5k-in-20-mins.19401/
+time=2026-01-22T15:38:56.816Z level=INFO msg="Severity: " !BADKEY=0xc0004b2010
+time=2026-01-22T15:38:57.055Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/source-code-tiktok-like-share-follwer-bot-%E2%AD%90-hq.55689/
+time=2026-01-22T15:38:57.069Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/source-code-tiktok-like-share-follwer-bot-%E2%AD%90-hq.55689/
+time=2026-01-22T15:38:57.073Z level=INFO msg="Severity: " !BADKEY=0xc0005a4020
+time=2026-01-22T15:38:57.187Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90get-free-rdp-%E2%AD%90-vps-high-speed%E2%AD%90-best-free-rdp-%E2%AD%90-2024-new.20665/
+time=2026-01-22T15:38:57.203Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90get-free-rdp-%E2%AD%90-vps-high-speed%E2%AD%90-best-free-rdp-%E2%AD%90-2024-new.20665/
+time=2026-01-22T15:38:57.212Z level=INFO msg="Severity: " !BADKEY=0xc0004b2050
+time=2026-01-22T15:39:00.224Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:39:00.224Z level=INFO msg="Processing batch" start=60 end=64 total_jobs=103
+time=2026-01-22T15:39:00.224Z level=INFO msg="Processing job" JobID=2b1f04c3-a941-41bd-abc5-c289e617bdc9
+time=2026-01-22T15:39:00.226Z level=INFO msg="Processing job" JobID=28b5a258-6447-4c58-92d0-5c7609eaf11c
+time=2026-01-22T15:39:00.226Z level=INFO msg="Processing job" JobID=08841b92-cff7-4848-a267-3d2bfc82b30d
+time=2026-01-22T15:39:00.227Z level=INFO msg="Processing job" JobID=331108da-c83a-47ca-8177-a3c79b8690ab
+time=2026-01-22T15:39:00.226Z level=INFO msg="Processing job" JobID=9df9fd37-6380-454d-9582-0884b152d3a3
+time=2026-01-22T15:39:00.333Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:00.474Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:00.628Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:00.930Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:00.930Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:01.671Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%85-giftcard-generator-%E2%9C%85-%E2%9D%97%EF%B8%8F-15-services-%E2%9D%97%EF%B8%8F.55771/
+time=2026-01-22T15:39:01.686Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%85-giftcard-generator-%E2%9C%85-%E2%9D%97%EF%B8%8F-15-services-%E2%9D%97%EF%B8%8F.55771/
+time=2026-01-22T15:39:01.695Z level=INFO msg="Severity: " !BADKEY=0xc0004b2060
+time=2026-01-22T15:39:02.092Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/mega-nz-v-2-checker-by-larry-uchiha-hell-team.28388/
+time=2026-01-22T15:39:02.105Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/mega-nz-v-2-checker-by-larry-uchiha-hell-team.28388/
+time=2026-01-22T15:39:02.110Z level=INFO msg="Severity: " !BADKEY=0xc0004b2050
+time=2026-01-22T15:39:02.383Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/epic-games-vm-checker.27379/
+time=2026-01-22T15:39:02.407Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/epic-games-vm-checker.27379/
+time=2026-01-22T15:39:02.414Z level=INFO msg="Severity: " !BADKEY=0xc0004b2018
+time=2026-01-22T15:39:02.685Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/hotmail-checker-v-2-new-api-2025-9-9-by-larry-uchiha.41214/
+time=2026-01-22T15:39:02.698Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/hotmail-checker-v-2-new-api-2025-9-9-by-larry-uchiha.41214/
+time=2026-01-22T15:39:02.706Z level=INFO msg="Severity: " !BADKEY=0xc0004b2018
+time=2026-01-22T15:39:02.866Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/credit-card-generator-trial-verification-purposes-only.19909/
+time=2026-01-22T15:39:02.880Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/credit-card-generator-trial-verification-purposes-only.19909/
+time=2026-01-22T15:39:02.886Z level=INFO msg="Severity: " !BADKEY=0xc0004b2040
+time=2026-01-22T15:39:05.898Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:39:05.898Z level=INFO msg="Processing batch" start=65 end=69 total_jobs=103
+time=2026-01-22T15:39:05.898Z level=INFO msg="Processing job" JobID=445bb2a6-9bbb-4533-bfbc-8e01801fef25
+time=2026-01-22T15:39:05.898Z level=INFO msg="Processing job" JobID=be1769e6-2730-44ef-a9a9-53a31070a654
+time=2026-01-22T15:39:05.898Z level=INFO msg="Processing job" JobID=a793dfce-6335-4b97-a79a-e2205f9d559b
+time=2026-01-22T15:39:05.898Z level=INFO msg="Processing job" JobID=8e99646c-e99b-4be5-b99b-623074db17d6
+time=2026-01-22T15:39:05.898Z level=INFO msg="Processing job" JobID=f0ad9773-4562-4cd6-b7a5-38df492b25e7
+time=2026-01-22T15:39:06.018Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:06.086Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:06.224Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:06.452Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:06.588Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:07.418Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/stress-testing-scripts-3-different-methods.51903/
+time=2026-01-22T15:39:07.435Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/stress-testing-scripts-3-different-methods.51903/
+time=2026-01-22T15:39:07.437Z level=INFO msg="Severity: " !BADKEY=0xc00038e050
+time=2026-01-22T15:39:08.294Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/leaked-hack-millions-of-cctv-cameras-in-any-country-free-tool-source-code-compile-it-yourself.271/
+time=2026-01-22T15:39:08.308Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/leaked-hack-millions-of-cctv-cameras-in-any-country-free-tool-source-code-compile-it-yourself.271/
+time=2026-01-22T15:39:08.328Z level=INFO msg="Severity: " !BADKEY=0xc0005a4028
+time=2026-01-22T15:39:08.393Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/best-cracking-pack-checkers-generator-config-collected-by-me-2019-updated.15121/
+time=2026-01-22T15:39:08.409Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/best-cracking-pack-checkers-generator-config-collected-by-me-2019-updated.15121/
+time=2026-01-22T15:39:08.449Z level=INFO msg="Severity: " !BADKEY=0xc0005a4008
+time=2026-01-22T15:39:08.874Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/rootsecs-ddos-archive-scanners-botnets-and-advanced-exploits-layer4-7-methods.55932/
+time=2026-01-22T15:39:08.890Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/rootsecs-ddos-archive-scanners-botnets-and-advanced-exploits-layer4-7-methods.55932/
+time=2026-01-22T15:39:08.906Z level=INFO msg="Severity: " !BADKEY=0xc0005a4020
+time=2026-01-22T15:39:09.054Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90-very-good-tested-%E2%98%A2%EF%B8%8Fddos%E2%98%A2%EF%B8%8F-with-56-methods-%E2%AD%90.55414/
+time=2026-01-22T15:39:09.069Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90-very-good-tested-%E2%98%A2%EF%B8%8Fddos%E2%98%A2%EF%B8%8F-with-56-methods-%E2%AD%90.55414/
+time=2026-01-22T15:39:09.089Z level=INFO msg="Severity: " !BADKEY=0xc0004b2010
+time=2026-01-22T15:39:12.101Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:39:12.101Z level=INFO msg="Processing batch" start=70 end=74 total_jobs=103
+time=2026-01-22T15:39:12.101Z level=INFO msg="Processing job" JobID=0802d42a-6de7-41e5-be56-851a640d6b24
+time=2026-01-22T15:39:12.102Z level=INFO msg="Processing job" JobID=4d1d60b5-6dda-4cad-bcdc-0b2f580126f5
+time=2026-01-22T15:39:12.102Z level=INFO msg="Processing job" JobID=84437e23-83fb-49fa-8e73-8d2be447e372
+time=2026-01-22T15:39:12.102Z level=INFO msg="Processing job" JobID=2ca7b411-b20b-4d4e-ab57-61afd9029a48
+time=2026-01-22T15:39:12.102Z level=INFO msg="Processing job" JobID=82a6c097-a514-4ae4-b67b-4833cfe9024d
+time=2026-01-22T15:39:12.221Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:12.221Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:12.432Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:12.432Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:12.728Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:13.343Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-cracked-cobalt-strike-corp-logs.62976/
+time=2026-01-22T15:39:13.358Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-cracked-cobalt-strike-corp-logs.62976/
+time=2026-01-22T15:39:13.368Z level=INFO msg="Severity: " !BADKEY=0xc0002a6030
+time=2026-01-22T15:39:13.654Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/craxsrat-v7-4.32876/
+time=2026-01-22T15:39:13.669Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/craxsrat-v7-4.32876/
+time=2026-01-22T15:39:13.693Z level=INFO msg="Severity: " !BADKEY=0xc0002a6008
+time=2026-01-22T15:39:14.116Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/hotmail-checker-inboxer-zmayke.26528/
+time=2026-01-22T15:39:14.133Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/hotmail-checker-inboxer-zmayke.26528/
+time=2026-01-22T15:39:14.147Z level=INFO msg="Severity: " !BADKEY=0xc00038e028
+time=2026-01-22T15:39:14.551Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/vcc-generator-create-unlimited-virtual-credit-cards-source-code.283/
+time=2026-01-22T15:39:14.566Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/vcc-generator-create-unlimited-virtual-credit-cards-source-code.283/
+time=2026-01-22T15:39:14.587Z level=INFO msg="Severity: " !BADKEY=0xc00038e048
+time=2026-01-22T15:39:15.002Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5-dox-bot-telegram-doxxing-bot-free-databreach-searches.19624/
+time=2026-01-22T15:39:15.019Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5-dox-bot-telegram-doxxing-bot-free-databreach-searches.19624/
+time=2026-01-22T15:39:15.079Z level=INFO msg="Severity: " !BADKEY=0xc00038e030
+time=2026-01-22T15:39:18.092Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:39:18.092Z level=INFO msg="Processing batch" start=75 end=79 total_jobs=103
+time=2026-01-22T15:39:18.092Z level=INFO msg="Processing job" JobID=16fa3ce7-78bc-43a9-a089-8cd95b21b840
+time=2026-01-22T15:39:18.092Z level=INFO msg="Processing job" JobID=bb7a0e69-4543-4511-9ec2-9172818fcea5
+time=2026-01-22T15:39:18.092Z level=INFO msg="Processing job" JobID=31c66469-4128-4af9-98c1-e300badef0ca
+time=2026-01-22T15:39:18.092Z level=INFO msg="Processing job" JobID=667d9f24-49a5-4823-857d-e933a3dbff28
+time=2026-01-22T15:39:18.092Z level=INFO msg="Processing job" JobID=60597698-c504-4170-a651-caaab3f855f9
+time=2026-01-22T15:39:18.287Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:18.505Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:18.673Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:18.704Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:18.783Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:19.695Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-low-balance-cards.43463/
+time=2026-01-22T15:39:19.713Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-low-balance-cards.43463/
+time=2026-01-22T15:39:19.721Z level=INFO msg="Severity: " !BADKEY=0xc00005e428
+time=2026-01-22T15:39:20.178Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/windows-hacking-tool-trojan.53891/
+time=2026-01-22T15:39:20.197Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/windows-hacking-tool-trojan.53891/
+time=2026-01-22T15:39:20.204Z level=INFO msg="Severity: " !BADKEY=0xc00005e428
+time=2026-01-22T15:39:20.670Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5-csint-bot-telegram-doxxing-bot-free-and-fast.43474/
+time=2026-01-22T15:39:20.689Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%94%A5-csint-bot-telegram-doxxing-bot-free-and-fast.43474/
+time=2026-01-22T15:39:20.699Z level=INFO msg="Severity: " !BADKEY=0xc00005e2b0
+time=2026-01-22T15:39:20.769Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/smtp-workstation1-best-smtp-cracker-by-xcrow.26496/
+time=2026-01-22T15:39:20.792Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/smtp-workstation1-best-smtp-cracker-by-xcrow.26496/
+time=2026-01-22T15:39:20.815Z level=INFO msg="Severity: " !BADKEY=0xc0004b2010
+time=2026-01-22T15:39:21.007Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-300-free-credit-cards-freshly-hacked-stolen.42517/
+time=2026-01-22T15:39:21.023Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/free-300-free-credit-cards-freshly-hacked-stolen.42517/
+time=2026-01-22T15:39:21.036Z level=INFO msg="Severity: " !BADKEY=0xc0004b2008
+time=2026-01-22T15:39:24.048Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:39:24.048Z level=INFO msg="Processing batch" start=80 end=84 total_jobs=103
+time=2026-01-22T15:39:24.048Z level=INFO msg="Processing job" JobID=6925eb09-d0b3-448c-a4fe-6bc418e2e76b
+time=2026-01-22T15:39:24.048Z level=INFO msg="Processing job" JobID=da58b021-e52d-420f-81c8-a54de2277517
+time=2026-01-22T15:39:24.048Z level=INFO msg="Processing job" JobID=6fb02c9b-ec1b-4708-90f5-0471f81cee4d
+time=2026-01-22T15:39:24.048Z level=INFO msg="Processing job" JobID=94c7da6b-0d9a-4e40-9205-b6034d3752ae
+time=2026-01-22T15:39:24.048Z level=INFO msg="Processing job" JobID=2db5ea71-53c0-4847-9849-9f8d5d3f9f43
+time=2026-01-22T15:39:24.165Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:24.165Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:24.370Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:24.371Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:24.529Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:25.527Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%9A%80-how-to-develop-a-crypto-wallet-cracker-software-crypto-puzzle-2025-%F0%9F%91%8C.29721/
+time=2026-01-22T15:39:25.549Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%F0%9F%9A%80-how-to-develop-a-crypto-wallet-cracker-software-crypto-puzzle-2025-%F0%9F%91%8C.29721/
+time=2026-01-22T15:39:25.558Z level=INFO msg="Severity: " !BADKEY=0xc00005e358
+time=2026-01-22T15:39:25.992Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/open-source-discord-server-booster-botter-working.55225/
+time=2026-01-22T15:39:26.008Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/open-source-discord-server-booster-botter-working.55225/
+time=2026-01-22T15:39:26.013Z level=INFO msg="Severity: " !BADKEY=0xc0005a4048
+time=2026-01-22T15:39:26.145Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/osint-tool-allowing-you-to-find-information-with-anything-emails-phone-etc.9351/
+time=2026-01-22T15:39:26.163Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/osint-tool-allowing-you-to-find-information-with-anything-emails-phone-etc.9351/
+time=2026-01-22T15:39:26.176Z level=INFO msg="Severity: " !BADKEY=0xc0005a4020
+time=2026-01-22T15:39:26.378Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/silent-crypto-miner-builder-monero-xmr-latest-version.41480/
+time=2026-01-22T15:39:26.393Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/silent-crypto-miner-builder-monero-xmr-latest-version.41480/
+time=2026-01-22T15:39:26.402Z level=INFO msg="Severity: " !BADKEY=0xc0005a4020
+time=2026-01-22T15:39:26.705Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/crypto-wallet-finder-%F0%9F%92%B2%F0%9F%92%B2%F0%9F%92%B2-free%F0%9F%92%B2%F0%9F%92%B2%F0%9F%92%B2.65811/
+time=2026-01-22T15:39:26.720Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/crypto-wallet-finder-%F0%9F%92%B2%F0%9F%92%B2%F0%9F%92%B2-free%F0%9F%92%B2%F0%9F%92%B2%F0%9F%92%B2.65811/
+time=2026-01-22T15:39:26.729Z level=INFO msg="Severity: " !BADKEY=0xc0005a4128
+time=2026-01-22T15:39:29.741Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:39:29.741Z level=INFO msg="Processing batch" start=85 end=89 total_jobs=103
+time=2026-01-22T15:39:29.741Z level=INFO msg="Processing job" JobID=7f87b7dd-0e2c-4c43-911e-3fc88fb493c0
+time=2026-01-22T15:39:29.741Z level=INFO msg="Processing job" JobID=2899dd42-4fe0-4e31-8f8b-e1cb985a2fce
+time=2026-01-22T15:39:29.741Z level=INFO msg="Processing job" JobID=f605518e-64e5-41c6-bdee-9566cb824e38
+time=2026-01-22T15:39:29.741Z level=INFO msg="Processing job" JobID=5f3591da-9183-4912-9832-1166b8f06776
+time=2026-01-22T15:39:29.741Z level=INFO msg="Processing job" JobID=bc334bd3-e577-4e2c-b893-1d56b83ae8b2
+time=2026-01-22T15:39:29.878Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:30.033Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:30.213Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:30.336Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:30.360Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:31.087Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9A%A1-discord-server-cloner-%E2%AD%90-clone-any-server-%E2%AD%90-without-permissions-%E2%AD%90-2024-%E2%9D%84%EF%B8%8F.55707/
+time=2026-01-22T15:39:31.100Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9A%A1-discord-server-cloner-%E2%AD%90-clone-any-server-%E2%AD%90-without-permissions-%E2%AD%90-2024-%E2%9D%84%EF%B8%8F.55707/
+time=2026-01-22T15:39:31.104Z level=INFO msg="Severity: " !BADKEY=0xc00005e3e0
+time=2026-01-22T15:39:31.485Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/turkey-id-card-generator%E2%9C%85%EF%B8%8F-source-code.78924/
+time=2026-01-22T15:39:31.500Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/turkey-id-card-generator%E2%9C%85%EF%B8%8F-source-code.78924/
+time=2026-01-22T15:39:31.517Z level=INFO msg="Severity: " !BADKEY=0xc00005e078
+time=2026-01-22T15:39:31.740Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/discord-server-nuker.55237/
+time=2026-01-22T15:39:31.764Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/discord-server-nuker.55237/
+time=2026-01-22T15:39:31.773Z level=INFO msg="Severity: " !BADKEY=0xc00005e078
+time=2026-01-22T15:39:31.861Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90%EF%B8%8F-dox-anyone-%E2%AD%90%EF%B8%8F-dox-guide-become-a-pro-osint-fein.9507/
+time=2026-01-22T15:39:31.875Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90%EF%B8%8F-dox-anyone-%E2%AD%90%EF%B8%8F-dox-guide-become-a-pro-osint-fein.9507/
+time=2026-01-22T15:39:31.897Z level=INFO msg="Severity: " !BADKEY=0xc0004b2008
+time=2026-01-22T15:39:32.195Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/instagram-hacker-ripper-account-hacking-password-ig-leaked.22058/
+time=2026-01-22T15:39:32.210Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/instagram-hacker-ripper-account-hacking-password-ig-leaked.22058/
+time=2026-01-22T15:39:32.218Z level=INFO msg="Severity: " !BADKEY=0xc0004b2008
+time=2026-01-22T15:39:35.230Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:39:35.230Z level=INFO msg="Processing batch" start=90 end=94 total_jobs=103
+time=2026-01-22T15:39:35.230Z level=INFO msg="Processing job" JobID=9b71d23f-1185-4432-89eb-d3416b85e619
+time=2026-01-22T15:39:35.230Z level=INFO msg="Processing job" JobID=41983854-b894-4927-987d-e72b29ba0fa2
+time=2026-01-22T15:39:35.230Z level=INFO msg="Processing job" JobID=5c5503f8-45c7-4d4e-85b4-8e5db8aae7e6
+time=2026-01-22T15:39:35.231Z level=INFO msg="Processing job" JobID=495019a0-38d8-4d09-871c-c96ce8fa8d82
+time=2026-01-22T15:39:35.231Z level=INFO msg="Processing job" JobID=d83414bd-764e-4cba-80d3-773ad2434a5a
+time=2026-01-22T15:39:35.353Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:35.353Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:35.492Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:35.493Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:35.801Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:36.822Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/fud-windows-crypter-bypass-windows-defender-all-antiviruses.41081/\": socks connect tcp 127.0.0.1:9050->darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion:80: unknown error general SOCKS server failure" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/fud-windows-crypter-bypass-windows-defender-all-antiviruses.41081/ attempt=1
+time=2026-01-22T15:39:36.822Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90-instagram-account-generator-%E2%9C%85-python-%E2%9D%A4%EF%B8%8F.56172/\": EOF" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90-instagram-account-generator-%E2%9C%85-python-%E2%9D%A4%EF%B8%8F.56172/ attempt=1
+time=2026-01-22T15:39:36.822Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%85%EF%B8%8Fdiscord-nuke-bot%E2%9C%85%EF%B8%8F%E2%AD%90%EF%B8%8Ffast-and-easy-to-use%E2%AD%90%EF%B8%8F%E2%9C%85%EF%B8%8Fnuke-channels-and-etc%E2%9C%85%EF%B8%8F.55021/\": EOF" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%85%EF%B8%8Fdiscord-nuke-bot%E2%9C%85%EF%B8%8F%E2%AD%90%EF%B8%8Ffast-and-easy-to-use%E2%AD%90%EF%B8%8F%E2%9C%85%EF%B8%8Fnuke-channels-and-etc%E2%9C%85%EF%B8%8F.55021/ attempt=1
+time=2026-01-22T15:39:36.822Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%A8%E2%9A%A1%EF%B8%8F-discord-selfbot-50-commands-%E2%9A%A1%EF%B8%8F%E2%9C%A8.52209/\": socks connect tcp 127.0.0.1:9050->darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion:80: unknown error general SOCKS server failure" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%A8%E2%9A%A1%EF%B8%8F-discord-selfbot-50-commands-%E2%9A%A1%EF%B8%8F%E2%9C%A8.52209/ attempt=1
+time=2026-01-22T15:39:36.822Z level=ERROR msg="Request failed" error="Get \"http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%A8-instagram-mass-reporter-%E2%9C%A8.55604/\": EOF" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%A8-instagram-mass-reporter-%E2%9C%A8.55604/ attempt=1
+time=2026-01-22T15:39:43.260Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%A8-instagram-mass-reporter-%E2%9C%A8.55604/
+time=2026-01-22T15:39:43.274Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%A8-instagram-mass-reporter-%E2%9C%A8.55604/
+time=2026-01-22T15:39:43.281Z level=INFO msg="Severity: " !BADKEY=0xc00005e2b0
+time=2026-01-22T15:39:43.391Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90-instagram-account-generator-%E2%9C%85-python-%E2%9D%A4%EF%B8%8F.56172/
+time=2026-01-22T15:39:43.411Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%AD%90-instagram-account-generator-%E2%9C%85-python-%E2%9D%A4%EF%B8%8F.56172/
+time=2026-01-22T15:39:43.415Z level=INFO msg="Severity: " !BADKEY=0xc00005e298
+time=2026-01-22T15:39:43.546Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/fud-windows-crypter-bypass-windows-defender-all-antiviruses.41081/
+time=2026-01-22T15:39:43.570Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/fud-windows-crypter-bypass-windows-defender-all-antiviruses.41081/
+time=2026-01-22T15:39:43.577Z level=INFO msg="Severity: " !BADKEY=0xc0002a6010
+time=2026-01-22T15:39:43.702Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%A8%E2%9A%A1%EF%B8%8F-discord-selfbot-50-commands-%E2%9A%A1%EF%B8%8F%E2%9C%A8.52209/
+time=2026-01-22T15:39:43.715Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%A8%E2%9A%A1%EF%B8%8F-discord-selfbot-50-commands-%E2%9A%A1%EF%B8%8F%E2%9C%A8.52209/
+time=2026-01-22T15:39:43.718Z level=INFO msg="Severity: " !BADKEY=0xc0002a6030
+time=2026-01-22T15:39:43.938Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%85%EF%B8%8Fdiscord-nuke-bot%E2%9C%85%EF%B8%8F%E2%AD%90%EF%B8%8Ffast-and-easy-to-use%E2%AD%90%EF%B8%8F%E2%9C%85%EF%B8%8Fnuke-channels-and-etc%E2%9C%85%EF%B8%8F.55021/
+time=2026-01-22T15:39:43.951Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9C%85%EF%B8%8Fdiscord-nuke-bot%E2%9C%85%EF%B8%8F%E2%AD%90%EF%B8%8Ffast-and-easy-to-use%E2%AD%90%EF%B8%8F%E2%9C%85%EF%B8%8Fnuke-channels-and-etc%E2%9C%85%EF%B8%8F.55021/
+time=2026-01-22T15:39:43.954Z level=INFO msg="Severity: " !BADKEY=0xc0002a6008
+time=2026-01-22T15:39:46.968Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:39:46.968Z level=INFO msg="Processing batch" start=95 end=99 total_jobs=103
+time=2026-01-22T15:39:46.968Z level=INFO msg="Processing job" JobID=0e0f41be-5bfd-45c3-892d-8bbf456df462
+time=2026-01-22T15:39:46.968Z level=INFO msg="Processing job" JobID=ace204a8-3814-484d-9e85-ab23dceda843
+time=2026-01-22T15:39:46.968Z level=INFO msg="Processing job" JobID=eb85149a-a682-4775-b4ed-56ae1b0ade1b
+time=2026-01-22T15:39:46.968Z level=INFO msg="Processing job" JobID=c1745d51-26bb-43ea-9bcb-d389ffb2f340
+time=2026-01-22T15:39:46.968Z level=INFO msg="Processing job" JobID=b12ae784-c0a0-40db-9e46-1d4ba63c369b
+time=2026-01-22T15:39:47.347Z level=ERROR msg="Failed to check Tor status: " error="Get \"https://check.torproject.org/api/ip\": EOF"
+time=2026-01-22T15:39:47.347Z level=ERROR msg="Job failed" id=0e0f41be-5bfd-45c3-892d-8bbf456df462 error="Get \"https://check.torproject.org/api/ip\": EOF" "Post URL"=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/mega-nz-checker-v-4-full-capture-video-photo-file.43800/
+time=2026-01-22T15:39:47.546Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:47.552Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:47.587Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:47.656Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:48.822Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/ban-tiktok-skids-with-mass-report-tool-no-proxies-needed.15025/
+time=2026-01-22T15:39:48.835Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/ban-tiktok-skids-with-mass-report-tool-no-proxies-needed.15025/
+time=2026-01-22T15:39:48.843Z level=INFO msg="Severity: " !BADKEY=0xc0004b2008
+time=2026-01-22T15:39:49.877Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/venom-rat-pro-hvnc-stealer-rat-latest-version.40092/
+time=2026-01-22T15:39:49.890Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/venom-rat-pro-hvnc-stealer-rat-latest-version.40092/
+time=2026-01-22T15:39:49.901Z level=INFO msg="Severity: " !BADKEY=0xc00005e428
+time=2026-01-22T15:39:49.957Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9A%A1webcam-hacking%E2%9A%A1.8795/
+time=2026-01-22T15:39:49.970Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/%E2%9A%A1webcam-hacking%E2%9A%A1.8795/
+time=2026-01-22T15:39:49.992Z level=INFO msg="Severity: " !BADKEY=0xc0004b2198
+time=2026-01-22T15:39:50.274Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/fud-k-g-b-rat-crypter-hvnc-fully-undetectable-latest-version.40728/
+time=2026-01-22T15:39:50.287Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/fud-k-g-b-rat-crypter-hvnc-fully-undetectable-latest-version.40728/
+time=2026-01-22T15:39:50.298Z level=INFO msg="Severity: " !BADKEY=0xc00005e3e8
+time=2026-01-22T15:39:53.311Z level=INFO msg="Batch finished." size=5
+time=2026-01-22T15:39:53.311Z level=INFO msg="Processing batch" start=100 end=102 total_jobs=103
+time=2026-01-22T15:39:53.311Z level=INFO msg="Processing job" JobID=be8fd631-aa98-45c7-b2bb-01f7a054031d
+time=2026-01-22T15:39:53.311Z level=INFO msg="Processing job" JobID=c972ecaa-44b1-4a3d-8a5f-ade36ff68c9e
+time=2026-01-22T15:39:53.311Z level=INFO msg="Processing job" JobID=22d85947-426e-4cea-8830-bd6860b6d1bf
+time=2026-01-22T15:39:53.875Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:53.944Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:54.012Z level=INFO msg="Connected to Tor network" IP=185.220.101.15
+time=2026-01-22T15:39:55.529Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/instagram-mass-reporter-tool-plus-full-source-code.26247/
+time=2026-01-22T15:39:55.548Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/instagram-mass-reporter-tool-plus-full-source-code.26247/
+time=2026-01-22T15:39:55.555Z level=INFO msg="Severity: " !BADKEY=0xc00005e448
+time=2026-01-22T15:39:56.912Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/burpsuite-professional-v2025-9-4-burpbountypro-v2-8-0.51817/
+time=2026-01-22T15:39:56.925Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/burpsuite-professional-v2025-9-4-burpbountypro-v2-8-0.51817/
+time=2026-01-22T15:39:56.945Z level=INFO msg="Severity: " !BADKEY=0xc00005e2b0
+time=2026-01-22T15:39:56.972Z level=INFO msg="Successfully scraped target" target=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/venom-rat-v5-and-v6-builders-hvnc-download.713/
+time=2026-01-22T15:39:56.990Z level=INFO msg="Successfully updated the last scan" URL=http://darknet4zr7qy626tz7pnk2hg76w77j6ljude45u4hyhu6fqpim6udyd.onion/threads/venom-rat-v5-and-v6-builders-hvnc-download.713/
+time=2026-01-22T15:39:56.997Z level=INFO msg="Severity: " !BADKEY=0xc00005e770
+time=2026-01-22T15:40:00.010Z level=INFO msg="Batch finished." size=3
+time=2026-01-22T15:40:00.010Z level=INFO msg="All posts are scanned"
+time=2026-01-22T18:01:58.962Z level=INFO msg="Connected to Tor network" IP=192.42.116.191
+time=2026-01-22T18:02:29.136Z level=INFO msg="Successfully scraped target" target=http://bfdxjkv5e2z3ilrifzbnvxxvhbzsj67akjpj3zc6smzr4vv6oz565gyd.onion/forums/hacking.88/
+time=2026-01-22T18:02:29.149Z level=INFO msg="Successfully updated the last scan" name=Forum
+time=2026-01-22T18:02:29.149Z level=INFO msg="Successfully scraped forum" name=Forum
+time=2026-01-22T18:12:49.015Z level=ERROR msg="Could not scan row" error="sql: expected 9 destination arguments in Scan, not 8"
+time=2026-01-22T18:12:49.016Z level=ERROR msg="Could not scan row" error="sql: expected 9 destination arguments in Scan, not 8"

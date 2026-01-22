@@ -3,11 +3,12 @@ import { SidebarProvider, SidebarInset, SidebarTrigger } from "./components/ui/s
 import { AppSidebar } from "./components/layout/sidebar";
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
-import Threats from "./pages/Threats";
 import Scrap from "./pages/Scrap";
 import Forums from "./pages/Forums";
+import Dashboard from "./pages/Dashboard";
 import { ModeToggle } from "./components/mode-toggle";
 import { Toaster } from "./components/ui/sonner";
+
 
 
 function App() {
@@ -21,8 +22,9 @@ function App() {
             <SidebarInset>
               <SidebarTrigger />
               <Routes>
+                <Route path="/" element={<Dashboard />} />
+                <Route path="/dashboard" element={<Dashboard />} />
                 <Route path="/homepage" element={<HomePage />} />
-                <Route path="/threats" element={<Threats />} />
                 <Route path="/scrap" element={<Scrap />} />
                 <Route path="/forums" element={<Forums />} />
               </Routes>

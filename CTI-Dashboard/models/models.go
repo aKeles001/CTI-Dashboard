@@ -23,6 +23,18 @@ type Post struct {
 	PostDate    string `json:"date"`
 }
 
+type Chart struct {
+	ForumID    string `json:"forum_id"`
+	ForumName  string `json:"forum_name"`
+	ForumURL   string `json:"forum_url"`
+	PostCount  int    `json:"count"`
+	High       int    `json:"high"`
+	Medium     int    `json:"medium"`
+	Low        int    `json:"low"`
+	Unassigned int    `json:"unassigned"`
+	LastScaned string `json:"last_scaned"`
+}
+
 type Job struct {
 	JobID     string `json:"job_id"`
 	ThreadURL string `json:"thread_url"`

@@ -14,6 +14,10 @@ export function Extract_posts(arg1) {
   return window['go']['main']['App']['Extract_posts'](arg1);
 }
 
+export function GetChartData(arg1) {
+  return window['go']['main']['App']['GetChartData'](arg1);
+}
+
 export function GetForums() {
   return window['go']['main']['App']['GetForums']();
 }

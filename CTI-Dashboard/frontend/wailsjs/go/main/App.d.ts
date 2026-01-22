@@ -8,6 +8,8 @@ export function DeleteForum(arg1:string):Promise<void>;
 
 export function Extract_posts(arg1:string):Promise<number>;
 
+export function GetChartData(arg1:string):Promise<Array<models.Chart>>;
+
 export function GetForums():Promise<Array<models.Forum>>;
 
 export function GetPosts(arg1:string):Promise<Array<models.Post>>;

@@ -34,6 +34,12 @@ func main() {
 		logger.Error("Could not connect to the database", "error", err)
 	}
 
+	_, err = db.Exec("PRAGMA foreign_keys = ON;")
+	if err != nil {
+		logger.Error("Could not enable foreign keys", "error", err)
+		return
+	}
+
 	if err := logger.Init(cfg.OutputDir); err != nil {
 		println("Error initializing logger:", err.Error())
 		return

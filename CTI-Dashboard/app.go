@@ -269,7 +269,7 @@ func (a *App) ScanPosts(forumID string) error {
 				} else {
 					a.db.Exec("UPDATE posts SET status = 'scraped' WHERE post_id = ?", j.JobID)
 				}
-				time.Sleep(30 * time.Second)
+				time.Sleep(3 * time.Second)
 			}(job)
 		}
 
@@ -277,5 +277,65 @@ func (a *App) ScanPosts(forumID string) error {
 		logger.Info("Batch finished.", "size", len(batch))
 	}
 	logger.Info("All posts are scanned")
+	return nil
+}
+
+func (a *App) GetChartData(forumID string) ([]models.Chart, error) {
+	statement, err := a.db.Prepare(`SELECT 
+        f.forum_id, 
+        f.forum_name,
+		f.forum_url, 
+        COUNT(p.post_id) AS post_count, 
+        SUM(CASE WHEN p.severity_level = 'high' THEN 1 ELSE 0 END) AS high,
+        SUM(CASE WHEN p.severity_level = 'medium' THEN 1 ELSE 0 END) AS medium,
+        SUM(CASE WHEN p.severity_level = 'low' THEN 1 ELSE 0 END) AS low,
+        SUM(CASE WHEN p.severity_level = 'unassigned' THEN 1 ELSE 0 END) AS unassigned,
+        f.last_scaned 
+    FROM forums f 
+    LEFT JOIN posts p ON f.forum_id = p.forum_id 
+    WHERE f.forum_id = ? 
+    GROUP BY f.forum_id, f.forum_name, f.last_scaned`)
+	if err != nil {
+		logger.Error("Could not prepare query statement", "error", err)
+		return nil, err
+	}
+	defer statement.Close()
+
+	rows, err := statement.Query(forumID)
+	if err != nil {
+		logger.Error("Could not execute query", "error", err)
+		return nil, err
+	}
+	defer rows.Close()
+
+	var chartData []models.Chart
+	for rows.Next() {
+		var chart models.Chart
+		err := rows.Scan(
+			&chart.ForumID,
+			&chart.ForumName,
+			&chart.ForumURL,
+			&chart.PostCount,
+			&chart.High,
+			&chart.Medium,
+			&chart.Low,
+			&chart.Unassigned,
+			&chart.LastScaned,
+		)
+		if err != nil {
+			logger.Error("Could not scan row", "error", err)
+			return nil, err
+		}
+		chartData = append(chartData, chart)
+	}
+	return chartData, nil
+}
+
+func (a *App) OpenPostHTML(ctx context.Context, html string) error {
+	window := application.NewWebviewWindowWithOptions(application.WebviewWindowOptions{
+		Title:  "HTML Viewer",
+		Width:  800,
+		Height: 600,
+	})
 	return nil
 }

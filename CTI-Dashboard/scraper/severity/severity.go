@@ -50,7 +50,7 @@ var keywordSets = map[SeverityLevel][]string{
 	},
 }
 
-func AssessSeverity(postBody io.Reader, db *sql.DB, forum_id string) error {
+func AssessSeverity(postBody io.Reader, db *sql.DB, thread_url string) error {
 	doc, err := goquery.NewDocumentFromReader(postBody)
 	if err != nil {
 		return err
@@ -60,7 +60,7 @@ func AssessSeverity(postBody io.Reader, db *sql.DB, forum_id string) error {
 		for severity, keywords := range keywordSets {
 			for _, keyword := range keywords {
 				if strings.Contains(content, keyword) {
-					_, err := db.Exec(`UPDATE posts SET severity_level = ? WHERE forum_id = ?`, severity, forum_id)
+					_, err := db.Exec(`UPDATE posts SET severity_level = ? WHERE thread_url = ?`, severity, thread_url)
 					if err != nil {
 						logger.Error("Could not insert severity level to the database", "error", err)
 						return
