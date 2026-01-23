@@ -16,6 +16,8 @@ export function GetPosts(arg1:string):Promise<Array<models.Post>>;
 
 export function MultipleScrape(arg1:Array<models.Forum>):Promise<Array<models.Forum>>;
 
+export function OpenHTMLInBrowser(arg1:string):Promise<void>;
+
 export function ScanPosts(arg1:string):Promise<void>;
 
 export function SingularScrape(arg1:models.Forum):Promise<void>;

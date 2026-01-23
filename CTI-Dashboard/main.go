@@ -61,9 +61,10 @@ func main() {
 	app := NewApp(cfg, client, writer, db)
 
 	err = wails.Run(&options.App{
-		Title:  "CTI-Dashboard",
-		Width:  1024,
-		Height: 768,
+		Title:      "CTI-Dashboard",
+		Fullscreen: true,
+		Width:      1024,
+		Height:     768,
 		AssetServer: &assetserver.Options{
 			Assets: assets,
 		},

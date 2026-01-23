@@ -55,19 +55,19 @@ const Dashboard: React.FC = () => {
   const chartConfig = {
     unassigned: {
       label: "Unassigned",
-      color: "#60a5fa",
+      color: "#757575",
     },
     low: {
       label: "Low",
-      color: "#6afa60",
+      color: "#105b0b",
     },
     medium: {
       label: "Medium",
-      color: "#edfa60",
+      color: "#bc7013",
     },
     high: {
       label: "High",
-      color: "#fa6060",
+      color: "#660505",
     },
   } satisfies ChartConfig;
 

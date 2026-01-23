@@ -2,6 +2,7 @@ package extractor
 
 import (
 	"CTI-Dashboard/scraper/logger"
+	"errors"
 
 	"database/sql"
 	"net/url"
@@ -20,7 +21,7 @@ var engines = map[string]ExtractFunc{
 }
 
 func PostExtract(forum_id string, db *sql.DB) (int, error) {
-	statement, err := db.Prepare(`SELECT forum_engine, forum_name, forum_html, forum_url FROM forums WHERE forum_id = ?`)
+	statement, err := db.Prepare(`SELECT forum_id, forum_engine, forum_name, forum_html, forum_url FROM forums WHERE forum_id = ?`)
 	if err != nil {
 		logger.Error("Could not prepare the database statement", "error", err)
 		return 0, err
@@ -29,12 +30,19 @@ func PostExtract(forum_id string, db *sql.DB) (int, error) {
 	var engine string
 	var forum_name string
 	var forum_html string
-	var forum_url string
-	err = statement.QueryRow(forum_id).Scan(&engine, &forum_name, &forum_html, &forum_url)
+	var forum_url string // Declared, but was not being scanned.
+	err = statement.QueryRow(forum_id).Scan(&forum_id, &engine, &forum_name, &forum_html, &forum_url)
 	if err != nil {
 		logger.Error("Could not scan the database rows", "error", err)
 		return 0, err
 	}
+
+	// Add a check for empty forum_html path
+	if forum_html == "" {
+		logger.Error("Forum HTML path is empty for forum", "forum_url", forum_url, "forum_id", forum_id)
+		return 0, errors.New("forum HTML content not found, please scrape the forum first")
+	}
+
 	file, err := os.Open(forum_html)
 	if err != nil {
 		logger.Error("Could not open the file", "error", err)
@@ -50,7 +58,7 @@ func PostExtract(forum_id string, db *sql.DB) (int, error) {
 
 	if extractor, ok := engines[engine]; ok {
 		var links []string
-		links = ExtractThreadLinks(doc, forum_url)
+		links = ExtractThreadLinks(doc, forum_url) // forum_id is now correctly passed
 		err = ProcessExtractedLinks(forum_id, links, db)
 		if err != nil {
 			logger.Error("Could not process extracted links", "error", err)

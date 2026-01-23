@@ -81,14 +81,6 @@ const handleSubmit = (e: React.FormEvent) => {
           </FieldSet>
         </form>
       </div>
-      <div className="mt-6">
-        <h2 className="text-xl font-semibold">About CTI Dashboard</h2>
-        <p className="mt-2">
-          CTI Dashboard is a platform for managing and discussing cyber threat
-          intelligence. Create forums to collaborate with others in the
-          cybersecurity community.
-        </p>
-      </div>
     </div>
   );
 };

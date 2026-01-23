@@ -6,6 +6,8 @@ import (
 	"errors"
 	"fmt"
 	"net/http"
+	"os"
+	"path/filepath"
 	"sync"
 	"time"
 
@@ -18,6 +20,7 @@ import (
 
 	"github.com/google/uuid"
 	_ "github.com/mattn/go-sqlite3"
+	"github.com/pkg/browser"
 )
 
 // App struct
@@ -138,23 +141,31 @@ func (a *App) MultipleScrape(forums []models.Forum) []models.Forum {
 
 // Delete Forum
 func (a *App) DeleteForum(forumID string) error {
+	// Delete associated posts first
+	_, err := a.db.Exec(`DELETE FROM posts WHERE forum_id = ?`, forumID)
+	if err != nil {
+		logger.Error("Could not delete associated posts from the database", "error", err)
+		return err
+	}
+
 	statement, err := a.db.Prepare(`DELETE FROM forums WHERE forum_id = ?`)
 	if err != nil {
 		logger.Error("Could not prepare the database statement", "error", err)
 		return err
 	}
 	defer statement.Close()
+
 	_, err = statement.Exec(forumID)
 	if err != nil {
 		logger.Error("Could not delete forum from the database", err)
 		return err
 	}
 	logger.Info("Successfully deleted forum", "id", forumID)
-	return err
+	return nil // Return nil on successful deletion
 }
 
-func (a *App) Extract_posts(forum_id string) (int, error) {
-	result, err := extractor.PostExtract(forum_id, a.db)
+func (a *App) Extract_posts(forum_url string) (int, error) {
+	result, err := extractor.PostExtract(forum_url, a.db)
 	return result, err
 }
 
@@ -331,11 +342,11 @@ func (a *App) GetChartData(forumID string) ([]models.Chart, error) {
 	return chartData, nil
 }
 
-func (a *App) OpenPostHTML(ctx context.Context, html string) error {
-	window := application.NewWebviewWindowWithOptions(application.WebviewWindowOptions{
-		Title:  "HTML Viewer",
-		Width:  800,
-		Height: 600,
-	})
-	return nil
+func (a *App) OpenHTMLInBrowser(PostContent string) error {
+	tmpFile := filepath.Join(os.TempDir(), ".html")
+	err := os.WriteFile(tmpFile, []byte(PostContent), 0644)
+	if err != nil {
+		return err
+	}
+	return browser.OpenFile(tmpFile)
 }

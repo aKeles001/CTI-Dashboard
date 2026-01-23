@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GetForums, Extract_posts, GetPosts, ScanPosts} from '../../wailsjs/go/main/App';
+import { GetForums, Extract_posts, GetPosts, OpenHTMLInBrowser} from '../../wailsjs/go/main/App';
 import { models } from '../../wailsjs/go/models';
 import { toast } from "sonner"
 import { Button } from '@/components/ui/button';
@@ -9,6 +9,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion"
+
 
 const Scrap: React.FC = () => {
   const [forums, setForums] = useState<models.Forum[]>([]);
@@ -24,15 +25,17 @@ const Scrap: React.FC = () => {
       .then((data) => {
         console.log(data);
         setForums(data);
-      })
-      .catch((err) => {
+      }).catch((err) => {
         setError(err);
+        console.log(err);
+      }).finally(() => {
+        if (error) {
+          return <div className="p-4">Error loading forums: {error}</div>;
+      }
       });
   }, []);
   
-  if (error) {
-    return <div className="p-4">Error loading forums: {error}</div>;
-  }
+  
   const handlePostCount = (forum: models.Forum) => {
     Extract_posts(forum.forum_id).then((count) => {
       setPostCounts(prevCounts => ({...prevCounts, [forum.forum_id]: count}));
@@ -42,20 +45,6 @@ const Scrap: React.FC = () => {
     });
   };
 
-  const handleGetPosts1 = (forumId: string) => {
-    setIsLoadingPosts(true);
-    ScanPosts(forumId)
-      .then(() => {
-        toast.success("Posts scanned successfully");
-      })
-      .catch((err) => {
-        setError(err);
-        toast.error("Failed to scan posts");
-      }).finally(() => {
-        setIsLoadingPosts(false);
-      });
-  
-  }
   const handleGetPosts = (forumId: string) => {
     GetPosts(forumId)
       .then((data) => {
@@ -65,10 +54,14 @@ const Scrap: React.FC = () => {
       .catch((err) => {
         setError(err);
         toast.error("Failed to fetch posts");
+        console.log(err);
       })
       .finally(() => {
         setIsLoadingPosts(false);
       });
+  };
+  const handleOpenPost = (content: string) => {
+    OpenHTMLInBrowser(content);
   };
 
   return (
@@ -107,14 +100,6 @@ const Scrap: React.FC = () => {
                         >
                             {isLoadingPosts ? 'Loading Posts...' : 'Show Posts'}
                         </Button>
-                        <Button
-                            className="sm:w-full"
-                            size="lg"
-                            onClick={() => handleGetPosts1(forum.forum_id)}
-                            disabled={isLoadingPosts}
-                        >
-                            {isLoadingPosts ? 'Loading Posts...' : 'Show Posts1'}
-                        </Button>
                         </div>
 
                         {posts.length > 0 && (
@@ -123,8 +108,18 @@ const Scrap: React.FC = () => {
                                 <ul className="space-y-4">
                                     {posts.map((post, index) => (
                                         <li key={index} className="border p-4 rounded-lg">
-                                            <p className="text-sm text-gray-500">{post.status}</p>
-                                            <p className="text-sm text-gray-500">{post.severity_level}</p>
+                                            <p className="text-sm text-gray-500">Status: {post.status}</p>
+                                            <p className="text-sm text-gray-500">Severity: {post.severity_level}</p>
+                                            <p className="text-sm text-gray-500">ID: {post.post_id}</p>
+                                            <p className="text-sm text-gray-500">URL: {post.thread_url}</p>
+                                            <Button
+                                                className="mt-4 sm:w-full"
+                                                size="lg"
+                                                variant="outline"
+                                                onClick={() => handleOpenPost(post.content)}
+                                            >
+                                                Open Post
+                                            </Button>
                                         </li>
                                     ))}
                                 </ul>

@@ -30,6 +30,10 @@ export function MultipleScrape(arg1) {
   return window['go']['main']['App']['MultipleScrape'](arg1);
 }
 
+export function OpenHTMLInBrowser(arg1) {
+  return window['go']['main']['App']['OpenHTMLInBrowser'](arg1);
+}
+
 export function ScanPosts(arg1) {
   return window['go']['main']['App']['ScanPosts'](arg1);
 }

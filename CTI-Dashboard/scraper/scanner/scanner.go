@@ -268,11 +268,7 @@ func UpdateLastScanPost(target string, db *sql.DB, body []byte) {
 
 func identify_engine(html_body string) (string, error) {
 	engines := map[string]string{
-		`id="XF"`:       "XenForo",
-		"my_post_key":   "MyBB",
-		"wp-content":    "WordPress",
-		"machina":       "Machina",
-		"milligram.css": "RansomEXX-Custom",
+		`id="XF"`: "XenForo",
 	}
 	for signature, engine := range engines {
 		if strings.Contains(html_body, signature) {

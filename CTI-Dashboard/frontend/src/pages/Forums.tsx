@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { GetForums, SingularScrape, MultipleScrape, DeleteForum, Extract_posts} from '../../wailsjs/go/main/App';
+import { GetForums, SingularScrape, MultipleScrape, DeleteForum, Extract_posts, ScanPosts} from '../../wailsjs/go/main/App';
 import { models } from '../../wailsjs/go/models';
 import { Button } from '@/components/ui/button';
 import { toast } from "sonner"
@@ -8,6 +8,7 @@ const Forums: React.FC = () => {
   const [forums, setForums] = useState<models.Forum[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
+
 
 
   useEffect(() => {
@@ -20,6 +21,7 @@ const Forums: React.FC = () => {
       .catch((err) => {
         setError(err);
         setLoading(false);
+        console.log(err);
       });
   }, []);
 
@@ -29,7 +31,8 @@ const Forums: React.FC = () => {
       toast.success("Forum Scanned :" + forum.forum_name);
       setForums((prevForums) => prevForums.map((f) => (f.forum_id === forum.forum_id ? forum : f)));
     }).catch((err) => {
-      toast.error("Failed to scan forum: " + err);
+      toast.error("Failed to scan forum: " + err); 
+    }).finally(() => {
     });
   };
   const handleScanM = (forums: models.Forum[]) => {
@@ -54,11 +57,17 @@ const Forums: React.FC = () => {
 
   const handleExtractPosts = (forum: models.Forum) => {
     Extract_posts(forum.forum_id).then((link_number) => {
-      toast.success("Posts Extracted\n" + link_number + " posts extracted");
+      toast.success(link_number + " posts extracted");
       if (window.confirm("Would you like to scrape the posts?")){
-        
+                ScanPosts(forum.forum_id)
+                  .then(() => {
+                    toast.success("Posts scanned successfully");
+                  })
+                  .catch((err) => {
+                    setError(err);
+                    toast.error("Failed to scan posts");
+                  });
       } else {
-        
       }
     }).catch((err) => {
       toast.error("Failed to extract posts: " + err);
