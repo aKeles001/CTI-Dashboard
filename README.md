@@ -21,6 +21,7 @@ The CTI Dashboard provides a user interface to help user to interact with the in
     *   [TypeScript](https://www.typescriptlang.org/)
 *   **Framework:** [Wails v2](https://wails.io/)
 *   **UI Components:** [Shadcn/ui](https://ui.shadcn.com/)
+*   **Database:** [SQLite](https://www.sqlite.org/)
 
 
 

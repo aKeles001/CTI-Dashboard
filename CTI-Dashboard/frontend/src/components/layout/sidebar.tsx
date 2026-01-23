@@ -22,8 +22,8 @@ export function AppSidebar() {
               </Link>
             </SidebarMenuItem>
             <SidebarMenuItem>
-              <Link to="/homepage" className="w-full">
-                Home Page
+              <Link to="/AddForum" className="w-full">
+                Add Forum
               </Link>
             </SidebarMenuItem>
             <SidebarMenuItem>

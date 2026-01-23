@@ -141,7 +141,6 @@ func (a *App) MultipleScrape(forums []models.Forum) []models.Forum {
 
 // Delete Forum
 func (a *App) DeleteForum(forumID string) error {
-	// Delete associated posts first
 	_, err := a.db.Exec(`DELETE FROM posts WHERE forum_id = ?`, forumID)
 	if err != nil {
 		logger.Error("Could not delete associated posts from the database", "error", err)
@@ -161,7 +160,7 @@ func (a *App) DeleteForum(forumID string) error {
 		return err
 	}
 	logger.Info("Successfully deleted forum", "id", forumID)
-	return nil // Return nil on successful deletion
+	return nil
 }
 
 func (a *App) Extract_posts(forum_url string) (int, error) {

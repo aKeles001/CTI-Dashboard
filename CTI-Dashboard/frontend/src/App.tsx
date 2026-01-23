@@ -2,7 +2,7 @@ import { ThemeProvider } from "./components/theme-provider";
 import { SidebarProvider, SidebarInset, SidebarTrigger } from "./components/ui/sidebar";
 import { AppSidebar } from "./components/layout/sidebar";
 import { Routes, Route } from "react-router-dom";
-import HomePage from "./pages/HomePage";
+import AddForum from "./pages/AddForum";
 import Scrap from "./pages/Scrap";
 import Forums from "./pages/Forums";
 import Dashboard from "./pages/Dashboard";
@@ -24,7 +24,7 @@ function App() {
               <Routes>
                 <Route path="/" element={<Dashboard />} />
                 <Route path="/dashboard" element={<Dashboard />} />
-                <Route path="/homepage" element={<HomePage />} />
+                <Route path="/AddForum" element={<AddForum />} />
                 <Route path="/scrap" element={<Scrap />} />
                 <Route path="/forums" element={<Forums />} />
               </Routes>

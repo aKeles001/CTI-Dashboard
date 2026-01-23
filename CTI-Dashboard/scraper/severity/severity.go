@@ -45,8 +45,9 @@ var keywordSets = map[SeverityLevel][]string{
 		"qr code scanner",
 	},
 	Low: {
-		"noob",
-		"tutorial",
+		"card",
+		"cc",
+		"pirated",
 	},
 }
 

@@ -6,7 +6,7 @@ import { Button } from '../components/ui/button';
 import { Field, FieldContent, FieldDescription, FieldLabel, FieldSeparator, FieldSet } from '@/components/ui/field';
 import { toast } from 'sonner';
 
-const HomePage: React.FC = () => {
+const AddForum: React.FC = () => {
   const [url, setUrl] = useState('');
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
@@ -85,4 +85,4 @@ const handleSubmit = (e: React.FormEvent) => {
   );
 };
 
-export default HomePage;
+export default AddForum;
